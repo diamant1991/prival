@@ -6,6 +6,7 @@
   <title>Главная</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
   <!--[if lt IE 9]>
@@ -15,31 +16,31 @@
 <body>
   <div class="wrapper">
     <header class="header">
-    	<div class="top-panel">
+    	<div class="top-panel hidden-xs">
     		<div class="container">
     			<div class="row">
     				<div class="top-panel__wrapp">
     					<div class="top-panel__item">
     						<a href="#" class="top-panel__link">
-    							<span class="fp fp-chat"></span>
+    							<span class="sprite sprite-chat"></span>
     							<span class="middle top-panel__link__text">Как оформить заказ?</span>
     						</a>
     					</div>
     					<div class="top-panel__item">
     						<a href="#" class="top-panel__link">
-    							<span class="fp fp-card"></span>
+    							<span class="sprite sprite-credit-cards"></span>
     							<span class="middle top-panel__link__text">Оплата и получение заказа</span>
     						</a>
     					</div>
     					<div class="top-panel__item">
     						<a href="#" class="top-panel__link">
-    							<span class="fp fp-reload"></span>
+    							<span class="sprite sprite-reload"></span>
     							<span class="middle top-panel__link__text">Обратная связь</span>
     						</a>
     					</div>
     					<div class="top-panel__item">
-    						<a href="#" class="top-panel__link">
-    							<span class="fp fp-gps"></span>
+    						<a href="#" class="top-panel__link adress-link">
+    							<span class="sprite sprite-placeholder"></span>
     							<span class="middle top-panel__link__text">Адреса мазазинов</span>
     						</a>
     					</div>
@@ -54,43 +55,55 @@
     					<div class="bottom-panel__left">
     						<div class="logo pull-left">
     							<a href="#">
-    								<div class="middle">
-    									<img src="img/logo.png" alt="">
-    								</div>
-    								<div class="middle">
-    									<img src="img/logo-title.png" alt="">
-    									<div class="logo__text">рыбалка - охота - туризм</div>
-    								</div>
+    								<img src="img/logo.png" alt="" class="hidden-xs">
+    								<img src="img/mobile-logo.png" alt="" class="visible-xs">
     							</a>
     						</div>
+    						<div class="header-btn pull-right visible-xs">
+    							<a href="#" class="mobile-basket middle">
+    								<span class="mobile-basket__icon"></span>
+    								<span class="mobile-basket__count">4</span>
+    							</a>
+    							<a href="#" class="toggle-menu middle"></a>
+    						</div>
     						<div class="header__contacts pull-right">
-    							<div class="header__contacts__title">Заказ на сайте и по телефону</div>
-    							<div class="header__contacts__item">
-    								<div class="header__contacts__icon">
-    									<i class="fp fp-telephone"></i>
+    							<div class="header__contacts__title hidden-xs">Заказ на сайте и по телефону</div>
+    							<div class="header__contacts__item tel">
+    								<div class="header__contacts__icon middle">
+    									<span class="sprite sprite-phone-receiver"></span>
     								</div>
     								<div class="header__contacts__text number middle">
-    									8 (8342) 47-90-86 
+    									8 (8342) 47-90-86
     								</div>
     							</div>
-    							<div class="header__contacts__item">
-    								<div class="header__contacts__icon">
-    									<i class="fp fp-post"></i>
+    							<div class="header__contacts__item hidden-xs">
+    								<div class="header__contacts__icon middle">
+    									<span class="sprite sprite-close-envelope"></span>
     								</div>
     								<div class="header__contacts__text email middle">
     									<a href="#">priva-sapsan@rambler.ru</a>
     								</div>
     							</div>
+    							<div class="header__contacts__item pull-right visible-xs">
+    								<div class="header__contacts__icon middle">
+    									<span class="sprite sprite-small-gps"></span>
+    								</div>
+    								<div class="header__contacts__text gps middle">
+    									<a href="#">Адреса магазинов</a>
+    								</div>
+    							</div>
     						</div>
     					</div>
-    					<div class="bottom-panel__right">
+    					<div class="bottom-panel__right hidden-xs">
     						<div class="header__link clearfix">
     							<div class="col-sm-6">
-    								<div class="row">
+    								<div class="row left-btn">
     									<a href="#" class="header__link__item grey-link">
     										<div class="table-block">
     											<div class="block-vertical">
-    												<i class="fp fp-smartphone"></i>
+    												<span class="header__link__icon middle">
+    													<span class="sprite sprite-smartphone"></span>
+    												</span>
     												<span class="middle">Заказать звонок</span>
     											</div>
     										</div>
@@ -98,15 +111,15 @@
     								</div>
     							</div>
     							<div class="col-sm-6">
-    								<div class="row">
-    									<a href="#" class="header__link__item white-link">
-    										<div class="table-block">
-    											<div class="block-vertical">
-    												<div class="basket-link">
-    													<i class="fp fp-basket"></i>
-    												</div>
-    												<div class="basket-info">
-    													<div class="basket-info__status">	Корзина/ 0 шт. </div>
+    								<div class="row right-btn">
+    									<a href="#" class="header__link__item white-link clearfix">
+    										<div class="basket-link">
+    											<span class="sprite sprite-basket"></span>
+    										</div>
+    										<div class="basket-info">
+    											<div class="table-block">
+    												<div class="block-vertical">
+    													<div class="basket-info__status">	<span>Корзина</span>/ 0 шт. </div>
     													<div class="basket-info__price">на 0.00 руб.</div>
     												</div>
     											</div>
@@ -115,11 +128,13 @@
     								</div>
     							</div>
     							<div class="col-sm-6">
-    								<div class="row">
+    								<div class="row left-btn">
     									<a href="#" class="header__link__item green-link">
     										<div class="table-block">
     											<div class="block-vertical">
-    												<i class="fp fp-question"></i>
+    												<span class="header__link__icon middle">
+    													<span class="sprite sprite-question-mark-button"></span>
+    												</span>
     												<span class="middle">Задать вопрос</span>
     											</div>
     										</div>
@@ -127,7 +142,7 @@
     								</div>
     							</div>
     							<div class="col-sm-6">
-    								<div class="row">
+    								<div class="row right-btn">
     									<a href="#" class="header__link__item green-link get-order">
     										<div class="table-block">
     											<div class="block-vertical">
@@ -148,9 +163,10 @@
       <div class="container">
         <div class="row">
           <nav class="nav mrg-bot clearfix">
-          	<ul>
+          	<a href="#" class="nav-close"></a>
+          	<ul class="nav__menu">
           		<li class="nav__item">
-          			<a href="#" class="nav__link">Главная</a>
+          			<a href="#" class="nav__link current-page">Главная</a>
           		</li>
           		<li class="nav__item">
           			<a href="#" class="nav__link">О компании</a>
@@ -165,249 +181,298 @@
           			<a href="#" class="nav__link">Контакты</a>
           		</li>
           	</ul>
+          	<a href="#" class="header__link__item grey-link visible-xs">
+          		<div class="table-block">
+          			<div class="block-vertical">
+          				<span class="header__link__icon middle">
+          					<span class="sprite sprite-smartphone"></span>
+          				</span>
+          				<span class="middle">Заказать звонок</span>
+          			</div>
+          		</div>
+          	</a>
+          	<a href="#" class="header__link__item green-link visible-xs">
+          		<div class="table-block">
+          			<div class="block-vertical">
+          				<span class="header__link__icon middle">
+          					<span class="sprite sprite-question-mark-button"></span>
+          				</span>
+          				<span class="middle">Задать вопрос</span>
+          			</div>
+          		</div>
+          	</a>
+          	<ul class="nav__menu__mobile visible-xs">
+          		<li><a href="#">Как оформить заказ?</a></li>
+          		<li><a href="#">Оплата и получение товара</a></li>
+          		<li><a href="#">Обратная связь</a></li>
+          	</ul>
           </nav>
           <div class="main clearfix">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-4 hidden-xs">
               <div class="row">
                 <aside class="sidebar">
                   <div class="search mrg-bot">
                     <form action="">
                       <div class="search__item">
                         <input type="seach" class="search__input" placeholder="Поиск"> 
-                        <button type="submit"></button>
+                        <button type="submit" class="search__submit">
+                          <span class="sprite sprite-magnifier"></span>
+                        </button>
                       </div>
                     </form>
                   </div>
-                </aside>
-                <div class="catalog Etelka-bold mrg-bot">
-                  <div class="catalog__title">Каталог</div>
-                  <ul class="catalog__list">
-                    <li>
-                      <a href="#">
-                        <div class="catalog__icon">
-                          
-                        </div>
-                        <div class="catalog__name">Рыбалка</div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="catalog__icon"></div>
-                        <div class="catalog__name">Охота</div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="catalog__icon"></div>
-                        <div class="catalog__name">Одежда и обувь</div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="catalog__icon"></div>
-                        <div class="catalog__name">Лодки и моторы</div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="catalog__icon"></div>
-                        <div class="catalog__name">Туризм и отдых</div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="catalog__icon"></div>
-                        <div class="catalog__name">Электронные приборы</div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="sidebar__item mrg-bot">
-                  <div class="sidebar__title Etelka-bold clearfix">
-                    <div class="pull-left sidebar__title__text">Новости</div>
-                    <div class="pull-right sidebar__title__link">
-                      <a href="#" class="middle">Все</a>
-                      <a href="#" class="middle"></a>
-                    </div>
-                  </div>
-                  <div class="sidebar__news-carousel">
-                    <ul class="bxslider" id="news-carousel">
+                  <div class="catalog Etelka-bold mrg-bot">
+                    <div class="catalog__title">Каталог</div>
+                    <ul class="catalog__list">
                       <li>
-                        <a href="#">
-                          <img src="http://placehold.it/350x150" alt="">
+                        <a href="#" class="catalog__link">
+                          <div class="catalog__icon">
+                            <span class="sprite sprite-hook"></span>
+                          </div>
+                          <div class="catalog__name">Рыбалка</div>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </a>
-                        <div class="news-descr">
-                          <div class="date-block">
-                            12.03.16
-                          </div>
-                          <div class="text-block">
-                            <p>
-                              Каждый четверг скидка 10% на все товары для летней рыбалки
-                            </p>
-                          </div>
-                        </div> 
                       </li>
                       <li>
-                        <a href="#">
-                          <img src=" http://placehold.it/350x150" alt="">
+                        <a href="#" class="catalog__link">
+                          <div class="catalog__icon">
+                            <span class="sprite sprite-hunting"></span>
+                          </div>
+                          <div class="catalog__name">Охота</div>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </a>
-                        <div class="news-descr">
-                          <div class="date-block">
-                            12.03.16
-                          </div>
-                          <div class="text-block">
-                            <p>
-                              Каждый четверг скидка 10% на все товары для летней рыбалки
-                            </p>
-                          </div>
-                        </div> 
                       </li>
                       <li>
-                        <a href="#">
-                          <img src=" http://placehold.it/350x150" alt="">
+                        <a href="#" class="catalog__link">
+                          <div class="catalog__icon">
+                            <span class="sprite sprite-casual-t-shirt-"></span>
+                          </div>
+                          <div class="catalog__name">Одежда и обувь</div>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </a>
-                        <div class="news-descr">
-                          <div class="date-block">
-                            12.03.16
+                      </li>
+                      <li>
+                        <a href="#" class="catalog__link">
+                          <div class="catalog__icon">
+                            <span class="sprite sprite-boart"></span>
                           </div>
-                          <div class="text-block">
-                            <p>
-                              Каждый четверг скидка 10% на все товары для летней рыбалки
-                            </p>
+                          <div class="catalog__name">Лодки и моторы</div>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="catalog__link">
+                          <div class="catalog__icon">
+                            <span class="sprite sprite-backpack"></span>
                           </div>
-                        </div> 
+                          <div class="catalog__name">Туризм и отдых</div>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="catalog__link">
+                          <div class="catalog__icon">
+                            <span class="sprite sprite-radio"></span>
+                          </div>
+                          <div class="catalog__name">Электронные приборы</div>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
                       </li>
                     </ul>
                   </div>
-                </div>
-                <div class="sidebar__item mrg-bot">
-                  <div class="weather">
-                    <img src="img/weather.jpg" alt="">
-                  </div>
-                </div>
-                <div class="sidebar__item mrg-bot">
-                  <div class="sidebar__title Etelka-bold clearfix">
-                    <div class="pull-left sidebar__title__text">Статьи</div>
-                    <div class="pull-right sidebar__title__link">
-                      <a href="#" class="middle">Все</a>
-                      <a href="#" class="middle"></a>
-                    </div>
-                  </div>
-                  <div class="sidebar__article">
-                    <div class="sidebar__article__img">
-                      <a href="#">
-                        <img src="http://placehold.it/350x150" alt="">
-                      </a>
-                    </div>
-                    <div class="sidebar__article__descr">
-                      <div class="date-block">
-                        12.03.16
-                      </div>
-                      <div class="sidebar__article__text Etelka-bold">
-                        <a href="#">
-                          Каждый четверг скидка 10% на все товары для летней рыбалки
+                  <div class="sidebar__item mrg-bot">
+                    <div class="sidebar__title Etelka-bold clearfix">
+                      <div class="pull-left sidebar__title__text">Новости</div>
+                      <div class="pull-right sidebar__title__link">
+                        <a href="#" class="middle">Все</a>
+                        <a href="#" class="middle">
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </a>
                       </div>
                     </div>
-                  </div>
-                  <div class="sidebar__article">
-                    <div class="sidebar__article__img">
-                      <a href="#">
-                        <img src="http://placehold.it/350x150" alt="">
-                      </a>
+                    <div class="sidebar__news-carousel">
+                      <ul class="bxslider" id="news-carousel">
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/350x150" alt="">
+                          </a>
+                          <div class="news-descr">
+                            <div class="date-block">
+                              12.03.16
+                            </div>
+                            <div class="text-block">
+                              <p>
+                                Каждый четверг скидка 10% на все товары для летней рыбалки
+                              </p>
+                            </div>
+                          </div> 
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src=" http://placehold.it/350x150" alt="">
+                          </a>
+                          <div class="news-descr">
+                            <div class="date-block">
+                              12.03.16
+                            </div>
+                            <div class="text-block">
+                              <p>
+                                Каждый четверг скидка 10% на все товары для летней рыбалки
+                              </p>
+                            </div>
+                          </div> 
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src=" http://placehold.it/350x150" alt="">
+                          </a>
+                          <div class="news-descr">
+                            <div class="date-block">
+                              12.03.16
+                            </div>
+                            <div class="text-block">
+                              <p>
+                                Каждый четверг скидка 10% на все товары для летней рыбалки
+                              </p>
+                            </div>
+                          </div> 
+                        </li>
+                      </ul>
                     </div>
-                    <div class="sidebar__article__descr">
-                      <div class="date-block">
-                        12.03.16
-                      </div>
-                      <div class="sidebar__article__text Etelka-bold">
-                        <a href="#">
-                          Каждый четверг скидка 10% на все товары для летней рыбалки
+                  </div>
+                  <div class="sidebar__item mrg-bot">
+                    <div class="weather">
+                      <img src="img/weather.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="sidebar__item mrg-bot">
+                    <div class="sidebar__title Etelka-bold clearfix">
+                      <div class="pull-left sidebar__title__text">Статьи</div>
+                      <div class="pull-right sidebar__title__link">
+                        <a href="#" class="middle">Все</a>
+                        <a href="#" class="middle">
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </a>
                       </div>
                     </div>
-                  </div>
-                  <div class="sidebar__article">
-                    <div class="sidebar__article__img">
-                      <a href="#">
-                        <img src="http://placehold.it/350x150" alt="">
-                      </a>
-                    </div>
-                    <div class="sidebar__article__descr">
-                      <div class="date-block">
-                        12.03.16
-                      </div>
-                      <div class="sidebar__article__text Etelka-bold">
+                    <div class="sidebar__article">
+                      <div class="sidebar__article__img">
                         <a href="#">
-                          Каждый четверг скидка 10% на все товары для летней рыбалки
+                          <img src="http://placehold.it/350x150" alt="">
+                        </a>
+                      </div>
+                      <div class="sidebar__article__descr">
+                        <div class="date-block">
+                          12.03.16
+                        </div>
+                        <div class="sidebar__article__text Etelka-bold">
+                          <a href="#">
+                            Каждый четверг скидка 10% на все товары для летней рыбалки
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sidebar__article">
+                      <div class="sidebar__article__img">
+                        <a href="#">
+                          <img src="http://placehold.it/350x150" alt="">
+                        </a>
+                      </div>
+                      <div class="sidebar__article__descr">
+                        <div class="date-block">
+                          12.03.16
+                        </div>
+                        <div class="sidebar__article__text Etelka-bold">
+                          <a href="#">
+                            Каждый четверг скидка 10% на все товары для летней рыбалки
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sidebar__article">
+                      <div class="sidebar__article__img">
+                        <a href="#">
+                          <img src="http://placehold.it/350x150" alt="">
+                        </a>
+                      </div>
+                      <div class="sidebar__article__descr">
+                        <div class="date-block">
+                          12.03.16
+                        </div>
+                        <div class="sidebar__article__text Etelka-bold">
+                          <a href="#">
+                            Каждый четверг скидка 10% на все товары для летней рыбалки
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidebar__item mrg-bot">
+                    <div class="sidebar__title Etelka-bold clearfix">
+                      <div class="pull-left sidebar__title__text">Видеобзоры</div>
+                      <div class="pull-right sidebar__title__link">
+                        <a href="#" class="middle">Все</a>
+                        <a href="#" class="middle">
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </a>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="sidebar__item mrg-bot">
-                  <div class="sidebar__title Etelka-bold clearfix">
-                    <div class="pull-left sidebar__title__text">Видеобзоры</div>
-                    <div class="pull-right sidebar__title__link">
-                      <a href="#" class="middle">Все</a>
-                      <a href="#" class="middle"></a>
-                    </div>
-                  </div>
-                  <div class="sidebar__article">
-                    <div class="sidebar__article__img">
-                      <a href="#">
-                        <img src="http://placehold.it/350x150" alt="">
-                      </a>
-                    </div>
-                    <div class="sidebar__article__descr">
-                      <div class="date-block">
-                        12.03.16
-                      </div>
-                      <div class="sidebar__article__text Etelka-bold">
+                    <div class="sidebar__article">
+                      <div class="sidebar__article__img">
                         <a href="#">
-                          Каждый четверг скидка 10% на все товары для летней рыбалки
+                          <img src="http://placehold.it/350x150" alt="">
                         </a>
                       </div>
-                    </div>
-                  </div>
-                  <div class="sidebar__article">
-                    <div class="sidebar__article__img">
-                      <a href="#">
-                        <img src="http://placehold.it/350x150" alt="">
-                      </a>
-                    </div>
-                    <div class="sidebar__article__descr">
-                      <div class="date-block">
-                        12.03.16
+                      <div class="sidebar__article__descr">
+                        <div class="date-block">
+                          12.03.16
+                        </div>
+                        <div class="sidebar__article__text Etelka-bold">
+                          <a href="#">
+                            Каждый четверг скидка 10% на все товары для летней рыбалки
+                          </a>
+                        </div>
                       </div>
-                      <div class="sidebar__article__text Etelka-bold">
+                    </div>
+                    <div class="sidebar__article">
+                      <div class="sidebar__article__img">
                         <a href="#">
-                          Каждый четверг скидка 10% на все товары для летней рыбалки
+                          <img src="http://placehold.it/350x150" alt="">
                         </a>
                       </div>
-                    </div>
-                  </div>
-                  <div class="sidebar__article">
-                    <div class="sidebar__article__img">
-                      <a href="#">
-                        <img src="http://placehold.it/350x150" alt="">
-                      </a>
-                    </div>
-                    <div class="sidebar__article__descr">
-                      <div class="date-block">
-                        12.03.16
+                      <div class="sidebar__article__descr">
+                        <div class="date-block">
+                          12.03.16
+                        </div>
+                        <div class="sidebar__article__text Etelka-bold">
+                          <a href="#">
+                            Каждый четверг скидка 10% на все товары для летней рыбалки
+                          </a>
+                        </div>
                       </div>
-                      <div class="sidebar__article__text Etelka-bold">
+                    </div>
+                    <div class="sidebar__article">
+                      <div class="sidebar__article__img">
                         <a href="#">
-                          Каждый четверг скидка 10% на все товары для летней рыбалки
+                          <img src="http://placehold.it/350x150" alt="">
                         </a>
                       </div>
+                      <div class="sidebar__article__descr">
+                        <div class="date-block">
+                          12.03.16
+                        </div>
+                        <div class="sidebar__article__text Etelka-bold">
+                          <a href="#">
+                            Каждый четверг скидка 10% на все товары для летней рыбалки
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </aside>
               </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 col-sm-8">
               <div class="row">
                 <div class="center-content">
                   <div class="main-slider mrg-bot Etelka-bold">
@@ -439,7 +504,7 @@
                     </ul>
                   </div>
                   <div class="category mrg-bot clearfix">
-                    <div class="col-lg-3">
+                    <div class="col-sm-3 col-xs-6">
                       <div class="row">
                         <div class="category__item">
                           <a href="#" class="category__link">
@@ -451,7 +516,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-sm-3 col-xs-6">
                       <div class="row">
                         <div class="category__item">
                           <a href="#" class="category__link">
@@ -463,7 +528,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-sm-3 col-xs-6">
                       <div class="row">
                         <div class="category__item">
                           <a href="#" class="category__link">
@@ -475,7 +540,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-sm-3 col-xs-6">
                       <div class="row">
                         <div class="category__item">
                           <a href="#" class="category__link">
@@ -491,11 +556,16 @@
                   <div class="novelty">
                     <div class="content-title mrg-bot Etelka-bold clearfix">
                       <div class="pull-left">
-                        <div class="title-name">Новинки</div>
+                        <div class="title-name">
+                          <span class="sprite sprite-star"></span>
+                          <span class="middle title-name__text">Новинки</span>
+                        </div>
                       </div>
                       <div class="pull-right">
                         <a href="#" class="title-btn middle">Все новинки</a>
-                        <a href="#" class="title-btn middle"></a>
+                        <a href="#" class="title-btn middle">
+                          <i class="fa fa-chevron-right"></i>
+                        </a>
                       </div>
                     </div>
                     <div class="product-carousel mrg-bot">
@@ -509,7 +579,8 @@
                               Удилище Aqua Aglia AO-19
                             </div>
                             <div class="product-carousel__price Etelka-bold">
-                              450
+                              <span class="middle">450</span>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__basket">
                               <a href="#" class="add-basket-btn">
@@ -532,7 +603,8 @@
                               Удилище Aqua Aglia AO-19
                             </div>
                             <div class="product-carousel__price Etelka-bold">
-                              450
+                              <span class="middle">450</span>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__basket">
                               <a href="#" class="add-basket-btn">
@@ -555,7 +627,8 @@
                               Удилище Aqua Aglia AO-19
                             </div>
                             <div class="product-carousel__price Etelka-bold">
-                              450
+                              <span class="middle">450</span>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__basket">
                               <a href="#" class="add-basket-btn">
@@ -578,7 +651,8 @@
                               Удилище Aqua Aglia AO-19
                             </div>
                             <div class="product-carousel__price Etelka-bold">
-                              450
+                              <span class="middle">450</span>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__basket">
                               <a href="#" class="add-basket-btn">
@@ -601,7 +675,8 @@
                               Удилище Aqua Aglia AO-19
                             </div>
                             <div class="product-carousel__price Etelka-bold">
-                              450
+                              <span class="middle">450</span>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__basket">
                               <a href="#" class="add-basket-btn">
@@ -621,11 +696,16 @@
                   <div class="special-offer">
                     <div class="content-title mrg-bot Etelka-bold clearfix">
                       <div class="pull-left">
-                        <div class="title-name">Спецпредложения</div>
+                        <div class="title-name">
+                          <span class="sprite sprite-megaphone"></span>
+                          <span class="title-name__text">Спецпредложения</span>
+                        </div>
                       </div>
                       <div class="pull-right">
                         <a href="#" class="title-btn middle">Все предложения</a>
-                        <a href="#" class="title-btn middle"></a>
+                        <a href="#" class="title-btn middle">
+                          <i class="fa fa-chevron-right"></i>
+                        </a>
                       </div>
                     </div>
                     <div class="product-carousel product-carousel__offer mrg-bot">
@@ -639,10 +719,12 @@
                               Удилище Aqua Aglia AO-19
                             </div>
                             <div class="product-carousel__prev-price Etelka-bold">
-                              450
+                              <span class="middle">450</span>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__today-price Etelka-bold">
-                              399
+                              <div class="middle">399</div>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__basket">
                               <a href="#" class="add-basket-btn">
@@ -665,10 +747,12 @@
                               Удилище Aqua Aglia AO-19
                             </div>
                             <div class="product-carousel__prev-price Etelka-bold">
-                              450
+                              <span class="middle">450</span>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__today-price Etelka-bold">
-                              399
+                              <div class="middle">399</div>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__basket">
                               <a href="#" class="add-basket-btn">
@@ -691,10 +775,12 @@
                               Удилище Aqua Aglia AO-19
                             </div>
                             <div class="product-carousel__prev-price Etelka-bold">
-                              450
+                              <span class="middle">450</span>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__today-price Etelka-bold">
-                              399
+                              <div class="middle">399</div>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__basket">
                               <a href="#" class="add-basket-btn">
@@ -717,10 +803,12 @@
                               Удилище Aqua Aglia AO-19
                             </div>
                             <div class="product-carousel__prev-price Etelka-bold">
-                              450
+                              <span class="middle">450</span>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__today-price Etelka-bold">
-                              399
+                              <div class="middle">399</div>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__basket">
                               <a href="#" class="add-basket-btn">
@@ -743,10 +831,12 @@
                               Удилище Aqua Aglia AO-19
                             </div>
                             <div class="product-carousel__prev-price Etelka-bold">
-                              450
+                              <span class="middle">450</span>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__today-price Etelka-bold">
-                              399
+                              <div class="middle">399</div>
+                              <i class="fa fa-rub middle"></i>
                             </div>
                             <div class="product-carousel__basket">
                               <a href="#" class="add-basket-btn">
@@ -768,7 +858,7 @@
                         </p>
                       </div>
                       <div class="info-container clearfix">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-6">
                           <div class="info-icon">
                             <div class="info-count">1</div>
                             <div class="table-block">
@@ -781,7 +871,7 @@
                             Сеть магазинов - <br>5 в Саранске и Рузаевке
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-6">
                           <div class="info-icon">
                             <div class="info-count">2</div>
                             <div class="table-block">
@@ -794,7 +884,7 @@
                             Первый открыт <br>в 1979г
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-6">
                           <div class="info-icon">
                             <div class="info-count">3</div>
                             <div class="table-block">
@@ -807,7 +897,7 @@
                             Ассортимент – более <br>10 000 товаров
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-6">
                           <div class="info-icon">
                             <div class="info-count">4</div>
                             <div class="table-block">
@@ -820,7 +910,7 @@
                             Профессиональные <br> консультации специалистов
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-6">
                           <div class="info-icon">
                             <div class="info-count">5</div>
                             <div class="table-block">
@@ -833,7 +923,7 @@
                             Гарантия качества
                           </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-6">
                           <div class="info-icon">
                             <div class="info-count">6</div>
                             <div class="table-block">
@@ -851,11 +941,16 @@
                     <div class="brand-container">
                       <div class="content-title mrg-bot Etelka-bold clearfix">
                         <div class="pull-left">
-                          <div class="title-name">Бренды</div>
+                          <div class="title-name">
+                            <span class="sprite sprite-diamond"></span>
+                            <span class="title-name__text">Бренды</span>
+                          </div>
                         </div>
                         <div class="pull-right">
                           <a href="#" class="title-btn middle">Все бренды</a>
-                          <a href="#" class="title-btn middle"></a>
+                          <a href="#" class="title-btn middle">
+                            <i class="fa fa-chevron-right"></i>
+                          </a>
                         </div>
                       </div>
                       <div class="brand-carousel">
@@ -901,9 +996,175 @@
         </div>
       </div>
     </div>
-    
   </div>
-  
+  <footer class="footer">
+  	<div class="subscribe">
+  	  <div class="container">
+  	    <div class="row">
+  	      <div class="subscribe__text pull-left">
+  	        <div class="table-block">
+  	          <div class="block-vertical">
+  	            Подпишитесь 
+  	            на смс-рассылку, 
+  	            чтобы узнать первыми 
+  	            о новинках и акциях
+  	          </div>
+  	        </div>
+  	      </div>
+  	      <div class="subscribe__title Etelka-bold text-upparcase">
+  	        <div class="table-block">
+  	          <div class="block-vertical">
+  	            Будь в курсе
+  	          </div>
+  	        </div>
+  	      </div>
+  	      <div class="subscribe__form pull-right">
+  	        <div class="table-block">
+  	          <div class="block-vertical">
+  	            <form action="">
+  	              <div class="input-block">
+  	                <input type="text" class="subscribe__input tel-input" placeholder="+7 (___) ___-__-__">
+  	              </div>
+  	              <input type="submit" class="submit-input" value="Подписаться">
+  	            </form>
+  	          </div>
+  	        </div>
+  	      </div>
+  	    </div>
+  	  </div>
+  	</div>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-8 col-sm-7">
+  				<div class="row">
+  					<div class="col-sm-4">
+  						<div class="row">
+  							<div class="footer__logo">
+  								<img src="img/footer-logo.png" alt="">
+  								<div class="footer__logo__text">
+  									мир настоящих мужчин
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-sm-8 footer-adress-wrapp">
+  						<div class="row">
+  							<div class="footer__title">Адреса магазинов</div>
+  						</div>
+  						<div class="row">
+  							<div class="col-md-6">
+  								<div class="row">
+  									<div class="adress">
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<span class="sprite sprite-small-gps"></span>
+  											</span>
+  											<span class="table-cell">г.Саранск, ул. Б.Хмельницкого, 38</span>
+  										</div>
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<i class="fa fa-phone"></i>
+  											</span>
+  											<span class="table-cell">8 (8342) 47-90-86</span>
+  										</div>
+  									</div>
+  									<div class="adress">
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<span class="sprite sprite-small-gps"></span>
+  											</span>
+  											<span class="table-cell">г.Рузаевка, К.Маркса, 18А</span>
+  										</div>
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<i class="fa fa-phone"></i>
+  											</span>
+  											<span class="table-cell">8 (83451) 6-26-92</span>
+  										</div>
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<span class="sprite sprite-small-post"></span>
+  											</span>
+  											<span class="table-cell">priva-sapsan@rambler.ru</span>
+  										</div>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="col-md-6">
+  								<div class="row">
+  									<div class="adress">
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<span class="sprite sprite-small-gps"></span>
+  											</span>
+  											<span class="table-cell">г.Саранск, ул. Коваленко, 50А</span>
+  										</div>
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<i class="fa fa-phone"></i>
+  											</span>
+  											<span class="table-cell">8 (8342) 72-00-69</span>
+  										</div>
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<span class="sprite sprite-small-clock"></span>
+  											</span>
+  											<span class="table-cell">График работы (с 9.00 – 19.00 без перерыва и выходных)</span>
+  										</div>
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="copyright">
+  						© 2000 – 2016 ООО «Сапсан» <br>
+  						Сеть магазинов для туризма, охоты и рыбалки
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col-md-4 col-sm-5">
+  				<div class="row">
+  					<div class="footer__info">
+  						<div class="footer__tel">+7 (995) 488- 49-32</div>
+  						<div class="footer__mail">
+  							<a href="mailto:e-mail@yandex.ru">e-mail@yandex.ru</a>
+  						</div>
+  						<div class="footer__vk">
+  							<a href="#" class="middle">Мы Вконтакте</a> 
+  							<span class="middle">
+  								<img src="img/vk-icon.png" alt="">
+  							</span>
+  						</div>
+  						<div class="paypal">
+  							Мы принимаем к оплате  Visa/MasterCard
+  						</div>
+  						<div class="paypal__var">
+  							<a href="#" class="middle">
+  								<img src="img/visa.png" alt="">
+  							</a>
+  							<a href="#" class="middle">
+  								<img src="img/mastercard.png" alt="">
+  							</a>
+  							<a href="#" class="middle">
+  								<img src="img/visa.png" alt="">
+  							</a>
+  							<a href="#" class="middle">
+  								<img src="img/mastercard.png" alt="">
+  							</a>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="footer__text">
+  				Данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, Для получения подробной информации о наличии и стоимости указанных товаров и (или) услуг, пожалуйста, обращайтесь к менеджерам отдела клиентского обслуживания.
+  			</div>
+  		</div>
+  	</div>
+  </footer>
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

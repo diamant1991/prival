@@ -1,0 +1,124 @@
+@media (max-width: 1199px) {
+  .category__title {
+    font-size: 13px; } }
+
+@media (min-width: 992px) {
+  .news-detail {
+    min-height: 900px; } }
+
+@media (max-width: 991px) {
+  .logo {
+    width: 195px;
+    padding-top: 11px; }
+  .category__item {
+    padding-left: 5px; }
+  .category {
+    margin-left: -5px; }
+  .content-title .pull-left {
+    font-size: 14px; }
+  .category__title {
+    font-size: 11px;
+    padding: 5px;
+    height: 35px; }
+  .main-slider__text {
+    bottom: 35px;
+    width: 250px;
+    font-size: 22px; }
+  .header__contacts__title {
+    font-size: 10px;
+    letter-spacing: 1px; }
+  .header__contacts__icon {
+    width: 25px; }
+  .header .number {
+    font-size: 16px; }
+  .header .email {
+    font-size: 13px; }
+  .header__contacts {
+    padding-top: 8px; }
+  .bottom-panel {
+    height: auto;
+    background-size: cover;
+    padding-bottom: 0; }
+  .bottom-panel__left {
+    width: 405px; }
+  .bottom-panel__right {
+    width: 335px; } }
+
+@media (min-width: 768px) {
+  .left-block {
+    float: left; }
+  .right-block {
+    float: right; }
+  .visible-xs {
+    display: none !important; }
+  .nav {
+    font-family: "EtelkaTextProBold";
+    border-bottom: 5px solid #86b53b; }
+    .nav__item {
+      float: left;
+      width: 20%;
+      border-right: 1px solid #636363; }
+      .nav__item:last-child {
+        border-right: 0; }
+    .nav__link {
+      display: block;
+      text-align: center;
+      background: #393939;
+      color: #fff;
+      padding: 10px;
+      font-size: 16px;
+      text-transform: uppercase; } }
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; }
+  .logo {
+    padding-top: 0;
+    width: auto; }
+  .nav {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    width: 260px;
+    padding: 10px;
+    padding-top: 65px;
+    background: rgba(37, 37, 37, 0.98); }
+    .nav__link {
+      display: block;
+      width: 175px;
+      height: 35px;
+      line-height: 33px;
+      color: #fff;
+      padding: 0 20px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-family: "EtelkaTextProBold";
+      border: 1px solid transparent; }
+      .nav__link.current-page {
+        border-color: #86b53b;
+        color: #86b53b; }
+  .header__contacts a {
+    text-decoration: none; }
+  .header__contacts__icon {
+    width: 20px; }
+  .header__contacts__item {
+    font-size: 16px; }
+  .header__contacts__item.tel {
+    float: left; }
+  .header__contacts {
+    float: none !important;
+    clear: both; }
+  .bottom-panel {
+    padding: 10px 0; }
+  .bottom-panel__left {
+    float: none;
+    width: 100%; }
+    .bottom-panel__left:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both; }
+  .container {
+    padding-left: 25px;
+    padding-right: 25px; } }
