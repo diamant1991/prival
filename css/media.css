@@ -1,15 +1,58 @@
 @media (max-width: 1199px) {
   .category__title {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .shares__text {
+    top: -300px;
+    font-size: 20px; }
+  .order-form {
+    padding-left: 0;
+    padding-right: 0; }
+  .shares__text span {
+    font-size: 30px; } }
 
 @media (min-width: 992px) {
   .news-detail {
-    min-height: 900px; } }
+    min-height: 900px; }
+  .contacts-row__right {
+    padding-left: 50px; }
+  .contacts-row__left {
+    padding-right: 50px; }
+  .contacts-write__right {
+    padding-left: 35px; }
+  .contacts-write__left {
+    padding-right: 35px; } }
 
 @media (max-width: 991px) {
   .logo {
     width: 195px;
     padding-top: 11px; }
+  .achiev-item {
+    width: 33.3%;
+    margin-bottom: 15px; }
+  .form-group .col-md-4,
+  .form-group .col-md-8,
+  .video-list .col-md-6,
+  .video-list .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .shares__text {
+    width: 350px;
+    height: 350px;
+    top: -170px;
+    font-size: 16px;
+    right: -50px;
+    padding-right: 85px;
+    padding-bottom: 70px; }
+    .shares__text span {
+      font-size: 20px; }
+  .control-label {
+    margin-bottom: 5px;
+    display: block;
+    padding-top: 0; }
+  .news-date {
+    margin-top: 10px; }
+  .news img {
+    float: none; }
   .category__item {
     padding-left: 5px; }
   .category {
@@ -45,6 +88,10 @@
     width: 335px; } }
 
 @media (min-width: 768px) {
+  .nav {
+    display: block !important; }
+  .catalog {
+    display: block !important; }
   .left-block {
     float: left; }
   .right-block {
@@ -67,23 +114,148 @@
       color: #fff;
       padding: 10px;
       font-size: 16px;
-      text-transform: uppercase; } }
+      text-transform: uppercase; }
+  .sidebar {
+    padding-right: 20px; } }
 
 @media (max-width: 767px) {
   .hidden-xs {
     display: none !important; }
+  .search-wrapp {
+    border-width: 3px; }
+  .item-title {
+    font-size: 16px; }
+  .license-title {
+    font-size: 14px; }
+  .achiev {
+    border-top: 0;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .achiev-wrapp {
+    margin-top: 0; }
+  .achiev-item {
+    width: 50%; }
+  .text-wrapp {
+    font-size: 14px; }
+  .text-about p {
+    font-size: 14px; }
+  h2 {
+    font-size: 18px; }
+  .employ-name {
+    font-size: 14px; }
+  .text-about {
+    padding: 10px; }
+  .contacts-write {
+    padding: 10px;
+    padding-bottom: 45px; }
+  .contacts-row,
+  .title-pad {
+    padding: 10px; }
+  .content {
+    padding-top: 5px; }
+  .catalog {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.77);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: none;
+    padding-left: 10px; }
+  .catalog__list {
+    width: 250px; }
+  .news-bottom .right-block {
+    margin-bottom: 10px; }
+  .page-link__item {
+    padding: 5px;
+    font-size: 9px; }
+  .pagination {
+    margin: 20px 0; }
+  .shares__text {
+    width: 230px;
+    height: 230px;
+    top: -130px;
+    font-size: 12px;
+    padding-left: 10px;
+    right: -25px;
+    padding-right: 35px;
+    padding-bottom: 30px; }
+    .shares__text span {
+      font-size: 14px; }
+  .pagination .next-page,
+  .pagination__page,
+  .pagination .prev-page {
+    width: 35px;
+    height: 35px;
+    line-height: 37px; }
+  .pagination__page {
+    font-size: 15px; }
+  .pagination .next-page,
+  .pagination .prev-page {
+    font-size: 18px;
+    line-height: 33px; }
+  .tag.padding {
+    padding: 10px; }
+  .news-item {
+    padding: 10px 0; }
+  .breadcrumb {
+    padding: 10px;
+    font-size: 8px; }
+  .breadcrumb li.active {
+    padding-top: 3px; }
+  .breadcrumb.mrg-bot {
+    margin-bottom: 0; }
+  .page-link__item .fa {
+    font-size: 16px;
+    position: relative;
+    top: -2px; }
+  .view-container {
+    padding: 10px;
+    padding-bottom: 30px; }
   .logo {
     padding-top: 0;
     width: auto; }
+  .wrapper {
+    overflow: hidden; }
+  .header .number {
+    font-size: 13px; }
   .nav {
     position: fixed;
     z-index: 100;
-    right: 0;
     top: 0;
     width: 260px;
+    right: -260px;
     padding: 10px;
+    display: none;
     padding-top: 65px;
     background: rgba(37, 37, 37, 0.98); }
+    .nav__btn {
+      padding-left: 20px;
+      width: 180px;
+      margin-top: 10px; }
+    .nav__child {
+      padding-left: 20px;
+      font-size: 12px; }
+      .nav__child li {
+        margin-bottom: 10px; }
+      .nav__child a {
+        color: #fff;
+        padding-left: 12px;
+        border-left: 3px solid transparent;
+        display: block;
+        padding-top: 2px; }
+        .nav__child a.active {
+          border-color: #86b53b;
+          text-decoration: underline;
+          font-weight: bold; }
+    .nav__menu__mobile {
+      padding-left: 20px;
+      font-size: 13px; }
+      .nav__menu__mobile li {
+        margin-bottom: 10px; }
+      .nav__menu__mobile a {
+        color: #fff; }
     .nav__link {
       display: block;
       width: 175px;
@@ -95,6 +267,13 @@
       font-size: 14px;
       font-family: "EtelkaTextProBold";
       border: 1px solid transparent; }
+      .nav__link .fa {
+        font-size: 23px;
+        position: relative;
+        left: 8px;
+        top: -3px; }
+      .nav__link.active {
+        color: #b9b5b5; }
       .nav__link.current-page {
         border-color: #86b53b;
         color: #86b53b; }
@@ -102,15 +281,83 @@
     text-decoration: none; }
   .header__contacts__icon {
     width: 20px; }
+  .main-slider__text {
+    width: 170px;
+    font-size: 16px;
+    right: 27px; }
+  .title-name .sprite {
+    margin-right: 3px; }
+  .content-title {
+    padding-right: 5px; }
+  .title-btn {
+    font-size: 7.5px;
+    padding: 0 2px; }
+    .title-btn .fa {
+      font-size: 10px; }
+  .content-title .pull-left {
+    padding-left: 5px;
+    padding-right: 10px;
+    line-height: 44px;
+    font-size: 10px; }
+  .subscribe__text {
+    font-size: 11px;
+    margin-left: -110px;
+    padding-left: 105px;
+    padding-right: 5px; }
+  .footer-adress-wrapp {
+    padding-left: 15px; }
+  .subscribe-mobile-title {
+    text-transform: uppercase;
+    font-family: "EtelkaTextProBold";
+    margin-bottom: 10px;
+    font-size: 15px; }
+  .subscribe__input,
+  .submit-input {
+    font-size: 14px; }
+  .footer__info {
+    text-align: center;
+    padding: 10px 0; }
+  .footer__vk {
+    margin-top: 10px;
+    font-size: 12px; }
+    .footer__vk a {
+      text-decoration: none;
+      margin-right: 5px; }
+  .subscribe__form {
+    width: 170px; }
+  .info-container .col-xs-6 {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .footer__logo {
+    float: left;
+    width: 125px;
+    text-align: center; }
+    .footer__logo__text {
+      font-size: 8px; }
+  .info-container .col-xs-6:nth-child(2n+1) {
+    clear: both; }
+  .info-text {
+    font-size: 13px; }
+  .owl-next {
+    right: -12px; }
+  .owl-prev {
+    left: -12px; }
+  h4 {
+    font-size: 15.5px; }
+  .text-container {
+    font-size: 14px; }
+  .product-carousel {
+    padding: 15px; }
   .header__contacts__item {
-    font-size: 16px; }
+    font-size: 13px; }
   .header__contacts__item.tel {
     float: left; }
   .header__contacts {
     float: none !important;
     clear: both; }
   .bottom-panel {
-    padding: 10px 0; }
+    padding-top: 10px;
+    padding-bottom: 0; }
   .bottom-panel__left {
     float: none;
     width: 100%; }

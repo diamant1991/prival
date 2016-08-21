@@ -155,6 +155,59 @@
     						</div>
     					</div>
     				</div>
+    				<div class="mobile-header-block visible-xs clearfix">
+    					<div class="col-xs-6">
+    						<div class="row">
+    							<div class="mobile-catalog">
+    								<a href="#" class="catalog-toggle">
+    									<span class="middle">Каталог</span>
+    									<i class="fa fa-angle-down"></i>
+    								</a>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="col-xs-6">
+    						<div class="row">
+    							<div class="search">
+                    <div class="search-wrapp">
+                      <form action="">
+                        <div class="search__item">
+                          <input type="seach" class="search__input" placeholder="Поиск"> 
+                          <button type="submit" class="search__submit">
+                            <span class="sprite sprite-magnifier"></span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- <div class="search-drop">
+                      <ul>
+                        <li>
+                          <a href="#">
+                           <span class="name">Удилище</span>
+                            Aqua Aglia AO-19
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                           <span class="name">Удилище</span>
+                            Aqua Aglia AO-19
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                           <span class="name">Удилище</span>
+                            Aqua Aglia AO-19
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="search-drop-bottom">
+                        <a href="#">Все результаты</a>
+                      </div>
+                    </div> -->
+                  </div>
+    						</div>
+    					</div>
+    				</div>	
     			</div>
     		</div>
     	</div>
@@ -162,8 +215,8 @@
     <div class="content">
       <div class="container">
         <div class="row">
-          <nav class="nav mrg-bot clearfix">
-          	<a href="#" class="nav-close"></a>
+          <nav class="nav mrg-bot clearfix" id="nav">
+          	<a href="#" class="nav-close visible-xs"></a>
           	<ul class="nav__menu">
           		<li class="nav__item">
           			<a href="#" class="nav__link current-page">Главная</a>
@@ -175,32 +228,44 @@
           			<a href="#" class="nav__link">Акции</a>
           		</li>
           		<li class="nav__item">
-          			<a href="#" class="nav__link">Полезное</a>
+          			<a href="#" class="nav__link active">
+          				Полезное
+          				<i class="fa fa-angle-right middle visible-xs"></i>
+          			</a>
+          			<ul class="nav__child visible-xs">
+          				<li>
+          					<a href="#" class="active">Получение лицензии</a>
+          				</li>
+          				<li><a href="#">Видеообзоры</a></li>
+          				<li><a href="#">Статьи</a></li>
+          			</ul>
           		</li>
           		<li class="nav__item">
           			<a href="#" class="nav__link">Контакты</a>
           		</li>
           	</ul>
-          	<a href="#" class="header__link__item grey-link visible-xs">
-          		<div class="table-block">
-          			<div class="block-vertical">
-          				<span class="header__link__icon middle">
-          					<span class="sprite sprite-smartphone"></span>
-          				</span>
-          				<span class="middle">Заказать звонок</span>
+          	<div class="nav__btn visible-xs">
+          		<a href="#" class="header__link__item grey-link">
+          			<div class="table-block">
+          				<div class="block-vertical">
+          					<span class="header__link__icon middle">
+          						<span class="sprite sprite-smartphone"></span>
+          					</span>
+          					<span class="middle">Заказать звонок</span>
+          				</div>
           			</div>
-          		</div>
-          	</a>
-          	<a href="#" class="header__link__item green-link visible-xs">
-          		<div class="table-block">
-          			<div class="block-vertical">
-          				<span class="header__link__icon middle">
-          					<span class="sprite sprite-question-mark-button"></span>
-          				</span>
-          				<span class="middle">Задать вопрос</span>
+          		</a>
+          		<a href="#" class="header__link__item green-link">
+          			<div class="table-block">
+          				<div class="block-vertical">
+          					<span class="header__link__icon middle">
+          						<span class="sprite sprite-question-mark-button"></span>
+          					</span>
+          					<span class="middle">Задать вопрос</span>
+          				</div>
           			</div>
-          		</div>
-          	</a>
+          		</a>
+          	</div>
           	<ul class="nav__menu__mobile visible-xs">
           		<li><a href="#">Как оформить заказ?</a></li>
           		<li><a href="#">Оплата и получение товара</a></li>
@@ -208,21 +273,48 @@
           	</ul>
           </nav>
           <div class="main clearfix">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-4">
               <div class="row">
                 <aside class="sidebar">
-                  <div class="search mrg-bot">
-                    <form action="">
-                      <div class="search__item">
-                        <input type="seach" class="search__input" placeholder="Поиск"> 
-                        <button type="submit" class="search__submit">
-                          <span class="sprite sprite-magnifier"></span>
-                        </button>
+                  <div class="search mrg-bot hidden-xs">
+                    <div class="search-wrapp">
+                      <form action="">
+                        <div class="search__item">
+                          <input type="seach" class="search__input" placeholder="Поиск"> 
+                          <button type="submit" class="search__submit">
+                            <span class="sprite sprite-magnifier"></span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- <div class="search-drop">
+                      <ul>
+                        <li>
+                          <a href="#">
+                           <span class="name">Удилище</span>
+                            Aqua Aglia AO-19
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                           <span class="name">Удилище</span>
+                            Aqua Aglia AO-19
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                           <span class="name">Удилище</span>
+                            Aqua Aglia AO-19
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="search-drop-bottom">
+                        <a href="#">Все результаты</a>
                       </div>
-                    </form>
+                    </div> -->
                   </div>
-                  <div class="catalog Etelka-bold mrg-bot">
-                    <div class="catalog__title">Каталог</div>
+                  <div class="catalog Etelka-bold mrg-bot" id="catalog-menu">
+                    <div class="catalog__title hidden-xs">Каталог</div>
                     <ul class="catalog__list">
                       <li>
                         <a href="#" class="catalog__link">
@@ -283,7 +375,7 @@
                 </aside>
               </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 col-sm-8">
               <div class="row">
                 <div class="center-content">
                   <div class="breadcrumb mrg-bot">
@@ -300,7 +392,7 @@
                   <div class="view-container">
                     <h3 class="item-title">Бренды</h3>
                     <div class="brands-list clearfix">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="brand-item">
                           <div class="table-block">
                             <div class="block-vertical">
@@ -311,7 +403,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="brand-item">
                           <div class="table-block">
                             <div class="block-vertical">
@@ -322,7 +414,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="brand-item">
                           <div class="table-block">
                             <div class="block-vertical">
@@ -333,7 +425,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="brand-item">
                           <div class="table-block">
                             <div class="block-vertical">
@@ -344,7 +436,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="brand-item">
                           <div class="table-block">
                             <div class="block-vertical">
@@ -355,7 +447,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="brand-item">
                           <div class="table-block">
                             <div class="block-vertical">
@@ -366,7 +458,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="brand-item">
                           <div class="table-block">
                             <div class="block-vertical">
@@ -377,7 +469,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="brand-item">
                           <div class="table-block">
                             <div class="block-vertical">
@@ -388,7 +480,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="brand-item">
                           <div class="table-block">
                             <div class="block-vertical">
@@ -399,7 +491,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="brand-item">
                           <div class="table-block">
                             <div class="block-vertical">
@@ -410,7 +502,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="brand-item">
                           <div class="table-block">
                             <div class="block-vertical">
@@ -421,7 +513,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="brand-item">
                           <div class="table-block">
                             <div class="block-vertical">
@@ -457,7 +549,7 @@
   	          </div>
   	        </div>
   	      </div>
-  	      <div class="subscribe__title Etelka-bold text-upparcase">
+  	      <div class="subscribe__title hidden-xs Etelka-bold text-upparcase">
   	        <div class="table-block">
   	          <div class="block-vertical">
   	            Будь в курсе
@@ -467,6 +559,9 @@
   	      <div class="subscribe__form pull-right">
   	        <div class="table-block">
   	          <div class="block-vertical">
+  	          	<div class="subscribe-mobile-title visible-xs">
+  			      		Будь в Курсе!
+  			      	</div>
   	            <form action="">
   	              <div class="input-block">
   	                <input type="text" class="subscribe__input tel-input" placeholder="+7 (___) ___-__-__">
@@ -486,9 +581,19 @@
   					<div class="col-sm-4">
   						<div class="row">
   							<div class="footer__logo">
-  								<img src="img/footer-logo.png" alt="">
-  								<div class="footer__logo__text">
-  									мир настоящих мужчин
+  								<a href="#">
+  									<img src="img/footer-logo.png" alt="">
+  									<div class="footer__logo__text">
+  										мир настоящих мужчин
+  									</div>
+  								</a>
+  							</div>
+  							<div class="footer-mob-info visible-xs pull-right">
+  								<div class="footer-mob-tel">+7 (995) 488- 49-32</div>
+  								<div class="footer-mob-work">
+  									График работы <br>
+  									(с 9.00 – 19.00 <br>
+  									без перерыва и выходных)
   								</div>
   							</div>
   						</div>
@@ -551,7 +656,7 @@
   											</span>
   											<span class="table-cell">8 (8342) 72-00-69</span>
   										</div>
-  										<div class="adress-item">
+  										<div class="adress-item hidden-xs">
   											<span class="table-cell contact-icon">
   												<span class="sprite sprite-small-clock"></span>
   											</span>
@@ -564,7 +669,7 @@
   					</div>
   				</div>
   				<div class="row">
-  					<div class="copyright">
+  					<div class="copyright hidden-xs">
   						© 2000 – 2016 ООО «Сапсан» <br>
   						Сеть магазинов для туризма, охоты и рыбалки
   					</div>
@@ -573,11 +678,11 @@
   			<div class="col-md-4 col-sm-5">
   				<div class="row">
   					<div class="footer__info">
-  						<div class="footer__tel">+7 (995) 488- 49-32</div>
-  						<div class="footer__mail">
+  						<div class="footer__tel hidden-xs">+7 (995) 488- 49-32</div>
+  						<div class="footer__mail hidden-xs">
   							<a href="mailto:e-mail@yandex.ru">e-mail@yandex.ru</a>
   						</div>
-  						<div class="footer__vk">
+  						<div class="footer__vk hidden-xs">
   							<a href="#" class="middle">Мы Вконтакте</a> 
   							<span class="middle">
   								<img src="img/vk-icon.png" alt="">
@@ -600,17 +705,29 @@
   								<img src="img/mastercard.png" alt="">
   							</a>
   						</div>
+  						<div class="footer__vk visible-xs">
+  							<a href="#" class="middle">Присоединяйтесь к нам</a> 
+  							<span class="middle">
+  								<img src="img/vk-icon.png" alt="">
+  							</span>
+  						</div>
   					</div>
   				</div>
   			</div>
   		</div>
   		<div class="row">
+  			<div class="copyright visible-xs">
+  				© 2000 – 2016 ООО «Сапсан» <br>
+  				Сеть магазинов для туризма, охоты и рыбалки
+  			</div>
   			<div class="footer__text">
   				Данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, Для получения подробной информации о наличии и стоимости указанных товаров и (или) услуг, пожалуйста, обращайтесь к менеджерам отдела клиентского обслуживания.
   			</div>
   		</div>
   	</div>
   </footer>
+  
+  <div class="up-button"></div>
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

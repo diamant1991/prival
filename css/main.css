@@ -1059,11 +1059,21 @@ h6 {
 h3 {
   font-size: 20px; }
 
+h2 {
+  font-size: 24px; }
+
 h4 {
   font-size: 17px; }
 
 p {
   margin-bottom: 10px; }
+
+b,
+strong {
+  font-weight: bold; }
+
+i {
+  font-style: italic; }
 
 .fm {
   font-family: "rub";
@@ -1215,12 +1225,26 @@ p {
 .header .email {
   font-size: 15px; }
 
+.up-button {
+  background: url(../img/up.png) no-repeat;
+  width: 101px;
+  height: 101px;
+  z-index: 50;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  cursor: pointer;
+  display: none; }
+
 .grey-link {
   background: #747474; }
 
 .white-link {
   background: #fff;
   color: #000; }
+
+body.catalog-open {
+  overflow: hidden; }
 
 .green-link {
   background: #86b53b; }
@@ -1296,8 +1320,43 @@ p {
   .contact-icon .fa {
     font-size: 16px; }
 
-.search {
+.search-drop-bottom {
+  margin-top: 10px;
+  border-top: 1px dashed #e4e4e4;
+  text-align: right;
+  padding: 10px 0;
+  line-height: 1; }
+  .search-drop-bottom a {
+    font-weight: bold;
+    font-size: 10px;
+    color: #848484; }
+
+.search-drop {
+  position: absolute;
+  z-index: 6;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .search-drop ul li {
+    margin-top: 15px; }
+  .search-drop ul a {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 11px;
+    color: #86b53b; }
+    .search-drop ul a:hover {
+      font-weight: bold; }
+  .search-drop ul .name {
+    color: #1b1b1b; }
+
+.search-wrapp {
   border: 5px solid #fff; }
+
+.search {
+  position: relative; }
   .search__item {
     position: relative; }
     .search__item:after {
@@ -1409,9 +1468,6 @@ img {
   font-size: 12px;
   color: #747474;
   margin: 5px 0; }
-
-.sidebar {
-  padding-right: 20px; }
 
 .yellow-color {
   color: #f6ff03; }
@@ -1719,7 +1775,8 @@ img {
       text-transform: uppercase;
       font-size: 12px;
       font-family: "EtelkaTextProBold";
-      margin-top: 5px; }
+      margin-top: 5px;
+      color: #fff; }
   .footer__title {
     text-decoration: underline;
     font-size: 12.5px;
@@ -1878,7 +1935,8 @@ img {
   background-position: -5px -664px; }
 
 .shares {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .shares__label {
     padding: 25px 20px;
     font-size: 14px;
@@ -1904,9 +1962,9 @@ img {
     right: -90px;
     top: -240px;
     z-index: 2;
-    padding-right: 120px;
+    padding-right: 100px;
     padding-left: 40px;
-    padding-bottom: 80px; }
+    padding-bottom: 85px; }
     .shares__text span {
       font-size: 48px; }
 
@@ -1971,7 +2029,8 @@ img {
 .view-container {
   background: #fff;
   padding: 20px 30px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  font-size: 14px; }
   .view-container.no-pad {
     padding: 0;
     padding-bottom: 40px; }
@@ -2158,10 +2217,15 @@ img {
   outline: 0;
   font-size: 14px;
   font-family: Tahoma,sans-serif;
-  padding: 0 10px; }
+  padding: 5px 10px; }
+
+textarea.form-control {
+  height: auto; }
 
 .form-group {
   margin-bottom: 30px; }
+  .form-group_input {
+    margin-bottom: 15px; }
   .form-group .item-link {
     font-size: 13px; }
 
@@ -2311,3 +2375,236 @@ img[align="left"] {
   height: 23px;
   display: block;
   background: url(../img/close-menu.png) no-repeat; }
+
+.footer-mob-info {
+  text-align: right;
+  padding-top: 25px; }
+
+.footer-mob-tel {
+  font-size: 16px;
+  margin-bottom: 10px; }
+
+.footer-mob-work {
+  font-size: 11.5px;
+  color: #e5e5e5;
+  line-height: 1.5; }
+
+.catalog-toggle {
+  display: block;
+  width: 100%;
+  height: 41px;
+  background: #86b53b;
+  color: #fff;
+  font-size: 13px;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "EtelkaTextProBold";
+  padding-left: 15px;
+  padding-right: 10px;
+  line-height: 40px; }
+  .catalog-toggle .fa {
+    font-size: 24px;
+    position: absolute;
+    top: 7px;
+    right: 10px; }
+
+.sprite-contact {
+  background-image: url(../img/contact-icon.png);
+  background-repeat: no-repeat;
+  display: block; }
+
+.sprite-black-clock {
+  width: 20px;
+  height: 20px;
+  background-position: -5px -5px; }
+
+.sprite-black-gps {
+  width: 15px;
+  height: 19px;
+  background-position: -5px -35px; }
+
+.sprite-black-phone {
+  width: 16px;
+  height: 17px;
+  background-position: -5px -64px; }
+
+.sprite-black-post {
+  width: 19px;
+  height: 14px;
+  background-position: -5px -91px; }
+
+.contacts-info {
+  font-size: 15px;
+  color: #393939;
+  margin-bottom: 10px; }
+  .contacts-info a {
+    text-decoration: underline;
+    color: #393939; }
+
+.clear {
+  clear: both; }
+
+.download-req {
+  text-align: center;
+  padding-top: 20px; }
+  .download-req span {
+    margin-right: 10px; }
+
+.contacts-row {
+  padding: 15px 30px 20px 30px; }
+  .contacts-row:nth-child(2n) {
+    background: #f3f3f3; }
+
+.contacts-icon {
+  width: 35px; }
+
+.contacts-map {
+  position: relative;
+  margin-top: 20px; }
+
+.map-label {
+  position: absolute;
+  z-index: 2;
+  left: 30px;
+  top: 30px; }
+
+.contacts-write {
+  padding: 20px 35px 35px 45px;
+  position: relative; }
+  .contacts-write:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    bottom: -40px;
+    background: url(../img/grass.jpg) no-repeat 50%;
+    background-size: cover;
+    height: 104px;
+    width: 100%; }
+  .contacts-write__title {
+    text-transform: uppercase;
+    font-family: "EtelkaTextProBold";
+    font-size: 20.5px;
+    color: #393939;
+    margin-bottom: 20px; }
+  .contacts-write .item-link {
+    display: block;
+    width: 200px;
+    height: 45px;
+    font-size: 16.5px; }
+  .contacts-write textarea {
+    height: 121px; }
+
+.contact-label {
+  font-size: 14px;
+  color: #393939;
+  padding-left: 20px;
+  margin-bottom: 5px; }
+
+.title-pad {
+  margin: 0;
+  padding: 20px 25px; }
+
+.license {
+  color: #2e2e2e;
+  font-size: 13.5px; }
+  .license ul li {
+    position: relative;
+    padding-left: 15px; }
+    .license ul li:before {
+      content: "";
+      display: block;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      z-index: 3;
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 4px;
+      height: 4px;
+      background: #2e2e2e; }
+
+.license-icon {
+  width: 45px; }
+
+.license-title {
+  font-size: 16.5px;
+  margin: 15px 0; }
+
+.text-wrapp {
+  color: #393939;
+  font-size: 16px; }
+
+.text-about {
+  padding: 40px; }
+  .text-about p {
+    font-size: 18px;
+    line-height: 1.5; }
+
+.achiev {
+  padding-left: 35px;
+  padding-right: 35px;
+  border-top: 7px solid #ebebeb;
+  margin-top: 35px;
+  margin-bottom: 65px; }
+
+.achiev-wrapp {
+  margin-top: -45px; }
+  .achiev-wrapp .download-req {
+    padding-top: 35px; }
+
+.achiev-item {
+  float: left;
+  width: 20%;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.achiev-icon {
+  text-align: center;
+  margin-bottom: 5px; }
+
+.achiev-text {
+  font-size: 15px;
+  color: #393939;
+  overflow: hidden;
+  height: 60px; }
+
+.employ-img {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 240px;
+  margin-bottom: 10px; }
+
+.employ-item {
+  color: #393939;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .employ-item:hover {
+    background: #ebebeb; }
+
+.employ-name {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: "EtelkaTextProBold"; }
+
+.employ-vac {
+  font-size: 14px;
+  margin-bottom: 10px; }
+
+.employ-info {
+  font-size: 12px; }
+
+.search-result-item {
+  margin-bottom: 25px; }
+
+.result-name {
+  color: #86b53b;
+  font-size: 13.5px; }
+
+.result-text {
+  font-size: 13.5px;
+  color: #8d8888;
+  margin-top: 5px;
+  line-height: 1.5;
+  margin-bottom: 0; }
