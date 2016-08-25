@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Лицензия</title>
+  <title>Перечень товаров</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
@@ -372,66 +372,67 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="sidebar__item mrg-bot hidden-xs">
+                  <div class="sidebar__item mrg-bot" id="filter">
                     <div class="sidebar__title Etelka-bold clearfix">
-                      <div class="pull-left sidebar__title__text">Статьи</div>
-                      <div class="pull-right sidebar__title__link">
-                        <a href="#" class="middle">Все</a>
-                        <a href="#" class="middle">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </a>
-                      </div>
+                      <h6 class="Etelka-bold text-upparcase green-color filter-toggle">
+                        <span class="middle">Поиск по фильтрам</span>
+                        <i class="fa fa-angle-right visi"></i>
+                      </h6>
                     </div>
-                    <div class="sidebar__article">
-                      <div class="sidebar__article__img">
-                        <a href="#">
-                          <img src="http://placehold.it/350x150" alt="">
-                        </a>
-                      </div>
-                      <div class="sidebar__article__descr">
-                        <div class="date-block">
-                          12.03.16
+                    <div class="sidebar__filter" id="sidebar-filter">
+                     <div class="range-slider">
+                        <div class="range-input">
+                          <span class="middle">Цена от</span>
+                          <input type="text" class="middle count-input minCost" value="50">
+                          <span class="middle">до</span>
+                          <input type="text" class="middle count-input maxCost" value="50000">
+                          <span class="middle">руб</span>
                         </div>
-                        <div class="sidebar__article__text Etelka-bold">
-                          <a href="#">
-                            Каждый четверг скидка 10% на все товары для летней рыбалки
-                          </a>
+                        <div class="slider-range-block">
+                          <div class="slider-range"></div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="sidebar__article">
-                      <div class="sidebar__article__img">
-                        <a href="#">
-                          <img src="http://placehold.it/350x150" alt="">
-                        </a>
-                      </div>
-                      <div class="sidebar__article__descr">
-                        <div class="date-block">
-                          12.03.16
+                        <div class="slide-range-val clearfix">
+                          <div class="pull-left">
+                            50
+                          </div>
+                          <div class="pull-right">
+                            50000
+                          </div>
                         </div>
-                        <div class="sidebar__article__text Etelka-bold">
-                          <a href="#">
-                            Каждый четверг скидка 10% на все товары для летней рыбалки
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="sidebar__article">
-                      <div class="sidebar__article__img">
-                        <a href="#">
-                          <img src="http://placehold.it/350x150" alt="">
-                        </a>
-                      </div>
-                      <div class="sidebar__article__descr">
-                        <div class="date-block">
-                          12.03.16
-                        </div>
-                        <div class="sidebar__article__text Etelka-bold">
-                          <a href="#">
-                            Каждый четверг скидка 10% на все товары для летней рыбалки
-                          </a>
-                        </div>
-                      </div>
+                     </div>
+                     <div class="sidebar-checkbox">
+                       <div class="text-upparcase">Производитель</div>
+                       <div class="checkbox-list clearfix">
+                         <div class="checkbox-item">
+                            <input type="checkbox" class="checkbox" id="check">
+                            <label for="check">Все</label>
+                         </div>
+                         <div class="checkbox-item">
+                            <input type="checkbox" class="checkbox" id="check2">
+                            <label for="check2">Daiwa</label>
+                         </div>
+                         <div class="checkbox-item">
+                            <input type="checkbox" class="checkbox" id="check3">
+                            <label for="check3">Salmo</label>
+                         </div>
+                         <div class="checkbox-item">
+                            <input type="checkbox" class="checkbox" id="check4">
+                            <label for="check4">Browning</label>
+                         </div>
+                         <div class="checkbox-item">
+                            <input type="checkbox" class="checkbox" id="check5">
+                            <label for="check5">Browning</label>
+                         </div>
+                         <div class="checkbox-item">
+                            <input type="checkbox" class="checkbox" id="check6">
+                            <label for="check6">Browning</label>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="filter-button">
+                       <button class="item-link compare-btn Etelka-bold text-upparcase">Применить</button>
+                       <a href="#" class="cancel-filter">Отменить фильтр</a>
+                     </div>
                     </div>
                   </div>
                 </aside>
@@ -439,73 +440,329 @@
             </div>
             <div class="col-md-9 col-sm-8">
               <div class="row">
-                <div class="center-content">
+                <div class="center-content pad-bot">
                   <div class="breadcrumb mrg-bot">
                     <ul class="clearfix">
                       <li>
                         <a href="#" class="middle">Главная</a>
                         <i class="fa fa-angle-right middle"></i>
                       </li>
+                      <li>
+                        <a href="#" class="middle">Каталог</a>
+                        <i class="fa fa-angle-right middle"></i>
+                      </li>
+                      <li>
+                        <a href="#" class="middle">Рыбалка</a>
+                        <i class="fa fa-angle-right middle"></i>
+                      </li>
                       <li class="active">
-                        <span class="middle">Получение лицензии на оружие</span>
+                        <span class="middle">Удилища</span>
                       </li>
                     </ul>
                   </div>
                   <div class="view-container">
-                    <h3 class="item-title">получение лицензии на оружие</h3>
-                    <div class="text">
-                      <div class="license-title Etelka-bold">
-                        <span class="table-cell license-icon">
-                          <img src="img/police-gun.png" alt="">
-                        </span>
-                        <span class="table-cell">
-                          Особенности товаров, продаваемых по лицензии, выданной в органах МВД России
-                        </span>
+                    <!-- filter -->
+                    <div class="filter filter_cat clearfix">
+                      <div class="left-block">
+                        <span class="middle">Показать</span>
+                        <a href="#" class="filter-item middle active">12</a>
+                        <a href="#" class="filter-item middle">24</a>
+                        <a href="#" class="filter-item middle">36</a>
+                        <a href="#" class="filter-item middle">Все</a>
                       </div>
-                      <p>
-                        - Огнестрельное оружие и патроны (приобретается по лицензии выданной в УВД) <br>
-                        - Пневматическое оружие с дульной энергией свыше 7,5Дж и калибра более 4,5мм (приобретается по лицензии, выданной в органах МВД РФ) <br>
-                        - Огнестрельное оружие ограниченного поражения (приобретается по лицензии, выданной в органах МВД РФ)
-                      </p>
-                      <div class="license-title Etelka-bold">
-                        <span class="table-cell license-icon">
-                          <img src="img/task-green.png" alt="">
-                        </span>
-                        <span class="table-cell">
-                          Получение разрешения на оружие
-                        </span>
+                      <div class="right-block">
+                        <span class="middle">Сортировать по:</span> 
+                        <a href="#" class="filter-item middle">названию</a>
+                        <a href="#" class="filter-item middle">цене</a>
                       </div>
-                      <p>
-                        Для начала разберемся какие лица НЕ ИМЕЮТ право на приобретение газового, огнестрельного гладкоствольного, длинноствольного оружия самообороны, а также спортивного или охотничьего оружия. Для этого нам необходимо обратиться к закону «Об оружии», в котором сказано, что следующие лица не имеет право на приобретение вышеперечисленного оружия: <br>
-                        лица, не достигшие возраста 21 года; <br>
-                        лица, не имеющие определенное место жительства; <br>
-                        граждане, состоящие на учете в психоневрологическом или наркологическом диспансере; <br>
-                        лица, совершившие умышленное преступление, то есть имеющие судимость; <br>
-                        граждане, имеющие за год повторное административное нарушение; <br>
-                        лица, имеющие тяжелые хронические заболевания, которые сопровождаются болезненными симптомами; <br>
-                        лица, у которых есть проблемы со зрением. <br>
-                        Право на приобретение гражданского огнестрельного оружия ограниченного поражения имеют граждане Российской Федерации, достигшие возраста 21 года, граждане Российской Федерации, не достигшие возраста 21 года, прошедшие либо проходящие военную службу, а также граждане, проходящие службу в государственных военизированных организациях и имеющие воинские звания либо специальные звания или классные чины. Право на приобретение газового оружия, огнестрельного гладкоствольного длинноствольного оружия самообороны, спортивного оружия, охотничьего оружия, сигнального оружия, холодного клинкового оружия, предназначенного для ношения с национальными костюмами народов Российской Федерации или казачьей формой, имеют граждане Российской Федерации, достигшие возраста 18 лет.
-                      </p>
-                      <div class="license-title Etelka-bold">
-                        <span class="table-cell license-icon">
-                          <img src="img/contract.png" alt="">
-                        </span>
-                        <span class="table-cell">
-                           Документы для получения разрешения на оружие
-                        </span>
-                      </div>
-                      <p>
-                        Для получения лицензии на покупку огнестрельного оружия ограниченного поражения, а также патронов к нему или лицензии на приобретение охотничьего гладкоствольного длинноствольного оружия и патронов к нему необходимо предоставить следующие документы:
-                      </p>
-                      <ul>
-                        <li>заявление;</li>
-                        <li>медсправка формы 046-1;</li>
-                        <li>паспорт, копия паспорта, 6 фотографий 3x4;</li>
-                        <li>охотничий билет (гладкоствольное оружие);</li>
-                        <li>свидетельство о сдаче экзамена на безопасное обращение с оружием.</li>
-                      </ul>
                     </div>
+                    <!-- filter end -->
+
+                    <!-- product -->
+                    <div class="product clearfix">
+                      <div class="col-md-4 col-sm-6 product-item">
+                        <div class="product-carousel__item">
+                          <div class="product-carousel__img">
+                            <img src="img/product.jpg" alt="">
+                          </div>
+                          <div class="product-carousel__name">
+                            Удилище Aqua Aglia AO-19
+                          </div>
+                          <div class="product-carousel__price Etelka-bold">
+                            <span class="middle">450</span>
+                            <i class="fa fa-rub middle"></i>
+                          </div>
+                          <div class="product-carousel__basket">
+                            <a href="#" class="add-basket-btn">
+                              <span class="icon middle">
+                                <img src="img/small-basket.png" alt="">
+                              </span>
+                              <span class="middle">в корзину</span>
+                            </a>
+                          </div>
+                          <div class="product-carousel__click">
+                            <a href="#" class="one-click-btn">
+                              <span class="middle">купить в 1 клик</span>
+                              <i class="fa fa-angle-right middle"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 product-item">
+                        <div class="product-carousel__item">
+                          <div class="product-carousel__img">
+                            <img src="img/product.jpg" alt="">
+                          </div>
+                          <div class="product-carousel__name">
+                            Удилище Aqua Aglia AO-19
+                          </div>
+                          <div class="product-carousel__price Etelka-bold">
+                            <span class="middle">450</span>
+                            <i class="fa fa-rub middle"></i>
+                          </div>
+                          <div class="product-carousel__basket">
+                            <a href="#" class="add-basket-btn">
+                              <span class="icon middle">
+                                <img src="img/small-basket.png" alt="">
+                              </span>
+                              <span class="middle">в корзину</span>
+                            </a>
+                          </div>
+                          <div class="product-carousel__click">
+                            <a href="#" class="one-click-btn">
+                              <span class="middle">купить в 1 клик</span>
+                              <i class="fa fa-angle-right middle"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 product-item">
+                        <div class="product-carousel__item">
+                          <div class="product-carousel__img">
+                            <img src="img/product.jpg" alt="">
+                          </div>
+                          <div class="product-carousel__name">
+                            Удилище Aqua Aglia AO-19
+                          </div>
+                          <div class="product-carousel__price Etelka-bold">
+                            <span class="middle">450</span>
+                            <i class="fa fa-rub middle"></i>
+                          </div>
+                          <div class="product-carousel__basket">
+                            <a href="#" class="add-basket-btn">
+                              <span class="icon middle">
+                                <img src="img/small-basket.png" alt="">
+                              </span>
+                              <span class="middle">в корзину</span>
+                            </a>
+                          </div>
+                          <div class="product-carousel__click">
+                            <a href="#" class="one-click-btn">
+                              <span class="middle">купить в 1 клик</span>
+                              <i class="fa fa-angle-right middle"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 product-item">
+                        <div class="product-carousel__item">
+                          <div class="product-carousel__img">
+                            <img src="img/product.jpg" alt="">
+                          </div>
+                          <div class="product-carousel__name">
+                            Удилище Aqua Aglia AO-19
+                          </div>
+                          <div class="product-carousel__price Etelka-bold">
+                            <span class="middle">450</span>
+                            <i class="fa fa-rub middle"></i>
+                          </div>
+                          <div class="product-carousel__basket">
+                            <a href="#" class="add-basket-btn">
+                              <span class="icon middle">
+                                <img src="img/small-basket.png" alt="">
+                              </span>
+                              <span class="middle">в корзину</span>
+                            </a>
+                          </div>
+                          <div class="product-carousel__click">
+                            <a href="#" class="one-click-btn">
+                              <span class="middle">купить в 1 клик</span>
+                              <i class="fa fa-angle-right middle"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 product-item">
+                        <div class="product-carousel__item">
+                          <div class="product-carousel__img">
+                            <img src="img/product.jpg" alt="">
+                          </div>
+                          <div class="product-carousel__name">
+                            Удилище Aqua Aglia AO-19
+                          </div>
+                          <div class="product-carousel__price Etelka-bold">
+                            <span class="middle">450</span>
+                            <i class="fa fa-rub middle"></i>
+                          </div>
+                          <div class="product-carousel__basket">
+                            <a href="#" class="add-basket-btn">
+                              <span class="icon middle">
+                                <img src="img/small-basket.png" alt="">
+                              </span>
+                              <span class="middle">в корзину</span>
+                            </a>
+                          </div>
+                          <div class="product-carousel__click">
+                            <a href="#" class="one-click-btn">
+                              <span class="middle">купить в 1 клик</span>
+                              <i class="fa fa-angle-right middle"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 product-item">
+                        <div class="product-carousel__item">
+                          <div class="product-carousel__img">
+                            <img src="img/product.jpg" alt="">
+                          </div>
+                          <div class="product-carousel__name">
+                            Удилище Aqua Aglia AO-19
+                          </div>
+                          <div class="product-carousel__price Etelka-bold">
+                            <span class="middle">450</span>
+                            <i class="fa fa-rub middle"></i>
+                          </div>
+                          <div class="product-carousel__basket">
+                            <a href="#" class="add-basket-btn">
+                              <span class="icon middle">
+                                <img src="img/small-basket.png" alt="">
+                              </span>
+                              <span class="middle">в корзину</span>
+                            </a>
+                          </div>
+                          <div class="product-carousel__click">
+                            <a href="#" class="one-click-btn">
+                              <span class="middle">купить в 1 клик</span>
+                              <i class="fa fa-angle-right middle"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 product-item">
+                        <div class="product-carousel__item">
+                          <div class="product-carousel__img">
+                            <img src="img/product.jpg" alt="">
+                          </div>
+                          <div class="product-carousel__name">
+                            Удилище Aqua Aglia AO-19
+                          </div>
+                          <div class="product-carousel__price Etelka-bold">
+                            <span class="middle">450</span>
+                            <i class="fa fa-rub middle"></i>
+                          </div>
+                          <div class="product-carousel__basket">
+                            <a href="#" class="add-basket-btn">
+                              <span class="icon middle">
+                                <img src="img/small-basket.png" alt="">
+                              </span>
+                              <span class="middle">в корзину</span>
+                            </a>
+                          </div>
+                          <div class="product-carousel__click">
+                            <a href="#" class="one-click-btn">
+                              <span class="middle">купить в 1 клик</span>
+                              <i class="fa fa-angle-right middle"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 product-item">
+                        <div class="product-carousel__item">
+                          <div class="product-carousel__img">
+                            <img src="img/product.jpg" alt="">
+                          </div>
+                          <div class="product-carousel__name">
+                            Удилище Aqua Aglia AO-19
+                          </div>
+                          <div class="product-carousel__price Etelka-bold">
+                            <span class="middle">450</span>
+                            <i class="fa fa-rub middle"></i>
+                          </div>
+                          <div class="product-carousel__basket">
+                            <a href="#" class="add-basket-btn">
+                              <span class="icon middle">
+                                <img src="img/small-basket.png" alt="">
+                              </span>
+                              <span class="middle">в корзину</span>
+                            </a>
+                          </div>
+                          <div class="product-carousel__click">
+                            <a href="#" class="one-click-btn">
+                              <span class="middle">купить в 1 клик</span>
+                              <i class="fa fa-angle-right middle"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 product-item">
+                        <div class="product-carousel__item">
+                          <div class="product-carousel__img">
+                            <img src="img/product.jpg" alt="">
+                          </div>
+                          <div class="product-carousel__name">
+                            Удилище Aqua Aglia AO-19
+                          </div>
+                          <div class="product-carousel__price Etelka-bold">
+                            <span class="middle">450</span>
+                            <i class="fa fa-rub middle"></i>
+                          </div>
+                          <div class="product-carousel__basket">
+                            <a href="#" class="add-basket-btn">
+                              <span class="icon middle">
+                                <img src="img/small-basket.png" alt="">
+                              </span>
+                              <span class="middle">в корзину</span>
+                            </a>
+                          </div>
+                          <div class="product-carousel__click">
+                            <a href="#" class="one-click-btn">
+                              <span class="middle">купить в 1 клик</span>
+                              <i class="fa fa-angle-right middle"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- product end-->
                   </div>
+                  <!-- pagination -->
+                  <div class="pagination">
+                    <ul class="pagination__list middle clearfix">
+                      <li>
+                        <a href="#" class="prev-page">
+                          <i class="fa fa-angle-left"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="pagination__page">1</a>
+                      </li>
+                      <li>
+                        <a href="#" class="pagination__page">2</a>
+                      </li>
+                      <li>
+                        <a href="#" class="pagination__page active">3</a>
+                      </li>
+                      <li>
+                        <a href="#" class="pagination__page">4</a>
+                      </li>
+                      <li>
+                        <a href="#" class="next-page">
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- pagination end -->
                 </div>
               </div>
             </div>
@@ -515,8 +772,7 @@
     </div>
   </div>
 
-
-
+  
   <footer class="footer">
   	<div class="subscribe">
   	  <div class="container">
@@ -825,8 +1081,8 @@
       </div>
     </div>
   </div>
+
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
-
 </body>
 </html>

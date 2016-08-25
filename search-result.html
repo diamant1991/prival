@@ -98,7 +98,7 @@
     						<div class="header__link clearfix">
     							<div class="col-sm-6">
     								<div class="row left-btn">
-    									<a href="#" class="header__link__item grey-link">
+    									<a href="#" class="header__link__item grey-link" data-toggle="modal" data-target="#modal-get-call">
     										<div class="table-block">
     											<div class="block-vertical">
     												<span class="header__link__icon middle">
@@ -129,7 +129,7 @@
     							</div>
     							<div class="col-sm-6">
     								<div class="row left-btn">
-    									<a href="#" class="header__link__item green-link">
+    									<a href="#" class="header__link__item green-link" data-toggle="modal" data-target="#question">
     										<div class="table-block">
     											<div class="block-vertical">
     												<span class="header__link__icon middle">
@@ -143,7 +143,7 @@
     							</div>
     							<div class="col-sm-6">
     								<div class="row right-btn">
-    									<a href="#" class="header__link__item green-link get-order">
+    									<a href="#" class="header__link__item green-link get-order" data-toggle="modal" data-target="#order-modal">
     										<div class="table-block">
     											<div class="block-vertical">
     												<span class="middle">Оформить заказ</span>
@@ -545,7 +545,7 @@
   			      	</div>
   	            <form action="">
   	              <div class="input-block">
-  	                <input type="text" class="subscribe__input tel-input" placeholder="+7 (___) ___-__-__">
+  	                <input type="text" class="subscribe__input tel-input phone-input" placeholder="+7 (___) ___-__-__">
   	              </div>
   	              <input type="submit" class="submit-input" value="Подписаться">
   	            </form>
@@ -709,6 +709,121 @@
   </footer>
   
   <div class="up-button"></div>
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="order-modal" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+          <h5 class="text-upparcase green-color">Покупка товара:</h5>
+          <div class="modal-name text-upparcase black Etelka-bold">Удилище спининговое В-1</div>
+        </div>
+        <div class="modal-body">
+          <div class="form-title">Заполните форму</div>
+          <form action="">
+          	<div class="form-group form-group_input">
+              <div class="contact-label">Представьтесь</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group form-group_input">
+              <div class="contact-label">Телефон</div>
+              <input type="text" class="form-control phone-input">
+            </div>
+            <div class="form-group form-group_input">
+              <div class="contact-label">E-mail</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="contact-label">Комментарий</div>
+              <textarea class="form-control" rows="7"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="item-link text-upparcase Etelka-bold" value="Отправить">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="question" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+          <h5 class="text-upparcase green-color">Задать вопрос</h5>
+        </div>
+        <div class="modal-body">
+          <div class="form-title">Чтобы напсиать нам, заполните форму</div>
+          <form action="">
+          	<div class="form-group form-group_input">
+              <div class="contact-label">Представьтесь</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group form-group_input">
+              <div class="contact-label">E-mail</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="contact-label">Комментарий</div>
+              <textarea class="form-control" rows="7"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="item-link text-upparcase Etelka-bold" value="Отправить">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modal-get-call" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+          <h5 class="text-upparcase green-color">Заказать звонок</h5>
+        </div>
+        <div class="modal-body">
+          <div class="form-title">Чтобы заказать звонок, заполните форму</div>
+          <form action="">
+          	<div class="form-group form-group_input">
+              <div class="contact-label">Представьтесь</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group form-group_input">
+              <div class="contact-label">Телефон</div>
+              <input type="text" class="form-control phone-input">
+            </div>
+            <div class="form-group form-group_input">
+              <div class="contact-label">Удобное время звонка</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="submit" class="item-link text-upparcase Etelka-bold" value="Заказать звонок">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal fade" id="thanks" role="dialog">
+    <div class="modal-dialog modal-dialog_thank" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+          <h5 class="text-upparcase green-color">Спасибо за обращение</h5>
+        </div>
+        <div class="modal-body">
+          <div class="modal-text">Наши менеджеры свяжутся с Вами в ближайшее время.</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
