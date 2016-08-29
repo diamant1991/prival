@@ -1229,9 +1229,9 @@ i {
   font-size: 15px; }
 
 .up-button {
-  background: url(../img/up.png) no-repeat;
-  width: 101px;
-  height: 101px;
+  background: url(../img/up.svg) no-repeat;
+  width: 103px;
+  height: 103px;
   z-index: 50;
   position: fixed;
   bottom: 30px;
@@ -1262,11 +1262,7 @@ body.catalog-open {
   position: relative;
   display: block; }
   .catalog__link:hover .fa, .catalog__link.active .fa {
-    color: #86b53b;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg); }
+    color: #86b53b; }
   .catalog__link:hover .catalog__name, .catalog__link.active .catalog__name {
     background: #fff;
     color: #86b53b; }
@@ -1342,6 +1338,7 @@ body.catalog-open {
   position: absolute;
   z-index: 6;
   left: 0;
+  display: none;
   background: #fff;
   width: 100%;
   padding-left: 10px;
@@ -1875,17 +1872,17 @@ img {
 .sprite-backpack {
   width: 30px;
   height: 28px;
-  background-position: -5px -5px; }
+  background: url(../img/katalog6.svg) no-repeat; }
 
 .sprite-basket {
   width: 28px;
   height: 22px;
-  background-position: -5px -43px; }
+  background: url(../img/korzina2.svg) no-repeat; }
 
 .sprite-boart {
   width: 36px;
   height: 12px;
-  background-position: -5px -75px; }
+  background: url(../img/katalog4.svg) no-repeat; }
 
 .sprite-casual-t-shirt- {
   width: 30px;
@@ -1895,17 +1892,17 @@ img {
 .sprite-chat {
   width: 21px;
   height: 21px;
-  background-position: -5px -133px; }
+  background: url(../img/chat.svg) no-repeat; }
 
 .sprite-close-envelope {
   width: 16px;
   height: 13px;
-  background-position: -5px -164px; }
+  background: url(../img/mail_white.svg) no-repeat; }
 
 .sprite-credit-cards {
-  width: 25px;
-  height: 19px;
-  background-position: -5px -187px; }
+  width: 26px;
+  height: 20px;
+  background: url(../img/credit-cards.svg) no-repeat; }
 
 .sprite-diamond {
   width: 34px;
@@ -1914,58 +1911,58 @@ img {
 
 .sprite-hook {
   width: 19px;
-  height: 27px;
-  background-position: -5px -256px; }
+  height: 28px;
+  background: url(../img/katalog1.svg) no-repeat; }
 
 .sprite-hunting {
   width: 32px;
   height: 32px;
-  background-position: -5px -293px; }
+  background: url(../img/katalo2.svg) no-repeat; }
 
 .sprite-magnifier {
   width: 21px;
   height: 21px;
-  background-position: -5px -335px; }
+  background: url(../img/lupa.svg) no-repeat; }
 
 .sprite-megaphone {
-  width: 37px;
-  height: 25px;
-  background-position: -5px -366px; }
+  width: 39px;
+  height: 26px;
+  background: url(../img/megaphone.svg) no-repeat; }
 
 .sprite-phone-receiver {
   width: 16px;
   height: 17px;
-  background-position: -5px -401px; }
+  background: url(../img/tel_white.svg) no-repeat; }
 
 .sprite-placeholder {
   width: 15px;
   height: 19px;
-  background-position: -5px -428px; }
+  background: url(../img/placeholder.svg) no-repeat; }
 
 .sprite-question-mark-button {
   width: 25px;
   height: 25px;
-  background-position: -5px -457px; }
+  background: url(../img/vopros.svg) no-repeat; }
 
 .sprite-radio {
   width: 26px;
   height: 26px;
-  background-position: -5px -492px; }
+  background: url(../img/katalog5.svg) no-repeat; }
 
 .sprite-reload {
   width: 17px;
   height: 19px;
-  background-position: -5px -528px; }
+  background: url(../img/reload.svg) no-repeat; }
 
 .sprite-small-clock {
-  width: 17px;
-  height: 17px;
-  background-position: -5px -557px; }
+  width: 18px;
+  height: 18px;
+  background: url(../img/clock.svg) no-repeat; }
 
 .sprite-small-gps {
-  width: 13px;
-  height: 16px;
-  background-position: -5px -584px; }
+  width: 15px;
+  height: 18px;
+  background: url(../img/placeholder_white.svg) no-repeat; }
 
 .sprite-small-post {
   width: 14px;
@@ -1973,14 +1970,14 @@ img {
   background-position: -5px -610px; }
 
 .sprite-smartphone {
-  width: 23px;
-  height: 23px;
-  background-position: -5px -631px; }
+  width: 22px;
+  height: 22px;
+  background: url(../img/zacazat_zvonok.svg) no-repeat; }
 
 .sprite-star {
-  width: 31px;
-  height: 31px;
-  background-position: -5px -664px; }
+  width: 33px;
+  height: 32px;
+  background: url(../img/new.svg) no-repeat; }
 
 .shares {
   position: relative;
@@ -2027,12 +2024,12 @@ img {
 .icon-share-complete {
   width: 27px;
   height: 27px;
-  background: url(../img/clock-red.png) no-repeat; }
+  background: url(../img/acia_final.svg) no-repeat; }
 
 .icon-share-active {
   width: 29px;
-  height: 29px;
-  background: url(../img/badge.png) no-repeat; }
+  height: 30px;
+  background: url(../img/acia_activ.svg) no-repeat; }
 
 .main-slider {
   background: #fff; }
@@ -2489,9 +2486,9 @@ img[align="left"] {
   display: block; }
 
 .sprite-black-clock {
-  width: 20px;
-  height: 20px;
-  background-position: -5px -5px; }
+  width: 18px;
+  height: 19px;
+  background: url(../img/clock_black.svg) no-repeat; }
 
 .sprite-black-gps {
   width: 15px;
@@ -2501,12 +2498,12 @@ img[align="left"] {
 .sprite-black-phone {
   width: 16px;
   height: 17px;
-  background-position: -5px -64px; }
+  background: url(../img/tel_black.svg) no-repeat; }
 
 .sprite-black-post {
-  width: 19px;
-  height: 14px;
-  background-position: -5px -91px; }
+  width: 14px;
+  height: 10px;
+  background: url(../img/mail_black.svg) no-repeat; }
 
 .contacts-info {
   font-size: 15px;
@@ -3021,7 +3018,7 @@ img[align="left"] {
 .sprite-windows {
   width: 35px;
   height: 29px;
-  background: url(../img/windows.png) no-repeat; }
+  background: url(../img/poxojie_tovaru.svg) no-repeat; }
 
 #description {
   display: block; }
@@ -3276,44 +3273,3 @@ img[align="left"] {
 .review-text {
   color: #747474;
   line-height: 1.5; }
-
-.second-level-menu {
-  background: #fff;
-  font-size: 14px;
-  display: none; }
-  .second-level-menu > li > a {
-    color: #969696;
-    display: block;
-    padding: 9px 15px;
-    position: relative;
-    font-family: Tahoma,Arial,sans-serif;
-    font-weight: 400; }
-    .second-level-menu > li > a:hover, .second-level-menu > li > a.active {
-      background: #86b53b;
-      color: #fff; }
-      .second-level-menu > li > a:hover .fa, .second-level-menu > li > a.active .fa {
-        color: #fff;
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg); }
-    .second-level-menu > li > a .fa {
-      position: absolute;
-      z-index: 2;
-      color: #d1d1d1;
-      right: 10px;
-      top: 50%;
-      font-size: 26px;
-      margin-top: -13px; }
-
-.third-level-menu {
-  background: #d1d1d1;
-  font-size: 14px;
-  display: none; }
-  .third-level-menu > li > a {
-    color: #424242;
-    display: block;
-    padding: 9px 15px;
-    position: relative;
-    font-family: Tahoma,Arial,sans-serif;
-    font-weight: 400; }

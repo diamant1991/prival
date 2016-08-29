@@ -143,7 +143,8 @@ function toggleFilter(){
 
 if (window.matchMedia("(max-width: 767px)").matches){
   $('.filter').after($('#filter'));
-  toggleFilter()
+  toggleFilter();
+  openMenu();
 }
 if($('#card-slider').length){
   $('#card-slider').bxSlider({
@@ -171,15 +172,17 @@ $(document).ready(function(){
   $('.phone-input').inputmask("+7 (999) 999-99-99"); 
 })
 
-$('.open-menu').click(function(e) {
-  e.preventDefault();
-  var menu = $(this).next();
-  if(menu.is(':hidden')){
-    $(this).addClass('active')
-    menu.slideDown(250)
-  }
-  else{
-    $(this).removeClass('active')
-    menu.slideUp(250)
-  }
-});
+function openMenu(){
+  $('.open-menu').click(function(e) {
+    e.preventDefault();
+    var menu = $(this).next();
+    if(menu.is(':hidden')){
+      $(this).addClass('active')
+      menu.slideDown(250)
+    }
+    else{
+      $(this).removeClass('active')
+      menu.slideUp(250)
+    }
+  });
+}
