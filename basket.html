@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Корзина</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+  <![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+    	<div class="top-panel hidden-xs">
+    		<div class="container">
+    			<div class="row">
+    				<div class="top-panel__wrapp">
+    					<div class="top-panel__item">
+    						<a href="#" class="top-panel__link">
+    							<span class="sprite sprite-chat"></span>
+    							<span class="middle top-panel__link__text">Как оформить заказ?</span>
+    						</a>
+    					</div>
+    					<div class="top-panel__item">
+    						<a href="#" class="top-panel__link">
+    							<span class="sprite sprite-credit-cards"></span>
+    							<span class="middle top-panel__link__text">Оплата и получение заказа</span>
+    						</a>
+    					</div>
+    					<div class="top-panel__item">
+    						<a href="#" class="top-panel__link">
+    							<span class="sprite sprite-reload"></span>
+    							<span class="middle top-panel__link__text">Обратная связь</span>
+    						</a>
+    					</div>
+    					<div class="top-panel__item">
+    						<a href="#" class="top-panel__link adress-link">
+    							<span class="sprite sprite-placeholder"></span>
+    							<span class="middle top-panel__link__text">Адреса мазазинов</span>
+    						</a>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="bottom-panel">
+    		<div class="container">
+    			<div class="row">
+    				<div class="bottom-panel__wrapp clearfix">
+    					<div class="bottom-panel__left">
+    						<div class="logo pull-left">
+    							<a href="#">
+    								<img src="img/logo2.png" width="150" height="94" alt="" class="hidden-xs">
+    								<img src="img/mobile-logo.png" alt="" class="visible-xs">
+    							</a>
+    						</div>
+    						<div class="header-btn pull-right visible-xs">
+    							<a href="#" class="mobile-basket middle">
+    								<span class="mobile-basket__icon"></span>
+    								<span class="mobile-basket__count">4</span>
+    							</a>
+    							<a href="#" class="toggle-menu middle"></a>
+    						</div>
+    						<div class="header__contacts pull-right">
+    							<div class="header__contacts__title hidden-xs">Заказ на сайте и по телефону</div>
+    							<div class="header__contacts__item tel">
+    								<div class="header__contacts__icon middle">
+    									<span class="sprite sprite-phone-receiver"></span>
+    								</div>
+    								<div class="header__contacts__text number middle">
+    									8 (8342) 47-90-86
+    								</div>
+    							</div>
+    							<div class="header__contacts__item hidden-xs">
+    								<div class="header__contacts__icon middle">
+    									<span class="sprite sprite-close-envelope"></span>
+    								</div>
+    								<div class="header__contacts__text email middle">
+    									<a href="#">priva-sapsan@rambler.ru</a>
+    								</div>
+    							</div>
+    							<div class="header__contacts__item pull-right visible-xs">
+    								<div class="header__contacts__icon middle">
+    									<span class="sprite sprite-small-gps"></span>
+    								</div>
+    								<div class="header__contacts__text gps middle">
+    									<a href="#">Адреса магазинов</a>
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="bottom-panel__right hidden-xs">
+    						<div class="header__link clearfix">
+    							<div class="col-sm-6">
+    								<div class="row left-btn">
+    									<a href="#" class="header__link__item grey-link" data-toggle="modal" data-target="#modal-get-call">
+    										<div class="table-block">
+    											<div class="block-vertical">
+    												<span class="header__link__icon middle">
+    													<span class="sprite sprite-smartphone"></span>
+    												</span>
+    												<span class="middle">Заказать звонок</span>
+    											</div>
+    										</div>
+    									</a>
+    								</div>
+    							</div>
+    							<div class="col-sm-6">
+    								<div class="row right-btn">
+    									<a href="#" class="header__link__item white-link clearfix">
+    										<div class="basket-link">
+    											<span class="sprite sprite-basket"></span>
+    										</div>
+    										<div class="basket-info">
+    											<div class="table-block">
+    												<div class="block-vertical">
+    													<div class="basket-info__status">	<span>Корзина</span>/ 0 шт. </div>
+    													<div class="basket-info__price">на 0.00 руб.</div>
+    												</div>
+    											</div>
+    										</div>
+    									</a>
+    								</div>
+    							</div>
+    							<div class="col-sm-6">
+    								<div class="row left-btn">
+    									<a href="#" class="header__link__item green-link" data-toggle="modal" data-target="#question">
+    										<div class="table-block">
+    											<div class="block-vertical">
+    												<span class="header__link__icon middle">
+    													<span class="sprite sprite-question-mark-button"></span>
+    												</span>
+    												<span class="middle">Задать вопрос</span>
+    											</div>
+    										</div>
+    									</a>
+    								</div>
+    							</div>
+    							<div class="col-sm-6">
+    								<div class="row right-btn">
+    									<a href="#" class="header__link__item green-link get-order" data-toggle="modal" data-target="#order-modal">
+    										<div class="table-block">
+    											<div class="block-vertical">
+    												<span class="middle">Оформить заказ</span>
+    											</div>
+    										</div>
+    									</a>
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="mobile-header-block visible-xs clearfix">
+    					<div class="col-xs-6">
+    						<div class="row">
+    							<div class="mobile-catalog">
+    								<a href="#" class="catalog-toggle">
+    									<span class="middle">Каталог</span>
+    									<i class="fa fa-angle-down"></i>
+    								</a>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="col-xs-6">
+    						<div class="row">
+    							<div class="search">
+                    <div class="search-wrapp">
+                      <form action="">
+                        <div class="search__item">
+                          <input type="seach" class="search__input" placeholder="Поиск"> 
+                          <button type="submit" class="search__submit">
+                            <span class="sprite sprite-magnifier"></span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- <div class="search-drop">
+                      <ul>
+                        <li>
+                          <a href="#">
+                           <span class="name">Удилище</span>
+                            Aqua Aglia AO-19
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                           <span class="name">Удилище</span>
+                            Aqua Aglia AO-19
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                           <span class="name">Удилище</span>
+                            Aqua Aglia AO-19
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="search-drop-bottom">
+                        <a href="#">Все результаты</a>
+                      </div>
+                    </div> -->
+                  </div>
+    						</div>
+    					</div>
+    				</div>	
+    			</div>
+    		</div>
+    	</div>
+    </header>
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <nav class="nav mrg-bot clearfix" id="nav">
+          	<a href="#" class="nav-close visible-xs"></a>
+          	<ul class="nav__menu">
+          		<li class="nav__item">
+          			<a href="#" class="nav__link current-page">Главная</a>
+          		</li>
+          		<li class="nav__item">
+          			<a href="#" class="nav__link">О компании</a>
+          		</li>
+          		<li class="nav__item">
+          			<a href="#" class="nav__link">Акции</a>
+          		</li>
+          		<li class="nav__item">
+          			<a href="#" class="nav__link open-menu">
+          				Полезное
+          				<i class="fa fa-angle-right middle visible-xs"></i>
+          			</a>
+          			<ul class="nav__child visible-xs">
+          				<li>
+          					<a href="#" class="active">Получение лицензии</a>
+          				</li>
+          				<li><a href="#">Видеообзоры</a></li>
+          				<li><a href="#">Статьи</a></li>
+          			</ul>
+          		</li>
+          		<li class="nav__item">
+          			<a href="#" class="nav__link">Контакты</a>
+          		</li>
+          	</ul>
+          	<div class="nav__btn visible-xs">
+          		<a href="#" class="header__link__item grey-link">
+          			<div class="table-block">
+          				<div class="block-vertical">
+          					<span class="header__link__icon middle">
+          						<span class="sprite sprite-smartphone"></span>
+          					</span>
+          					<span class="middle">Заказать звонок</span>
+          				</div>
+          			</div>
+          		</a>
+          		<a href="#" class="header__link__item green-link">
+          			<div class="table-block">
+          				<div class="block-vertical">
+          					<span class="header__link__icon middle">
+          						<span class="sprite sprite-question-mark-button"></span>
+          					</span>
+          					<span class="middle">Задать вопрос</span>
+          				</div>
+          			</div>
+          		</a>
+          	</div>
+          	<ul class="nav__menu__mobile visible-xs">
+          		<li><a href="#">Как оформить заказ?</a></li>
+          		<li><a href="#">Оплата и получение товара</a></li>
+          		<li><a href="#">Обратная связь</a></li>
+          	</ul>
+          </nav>
+          <div class="main clearfix">
+            <div class="col-md-3 col-sm-4">
+              <div class="row">
+                <aside class="sidebar">
+                  <div class="search mrg-bot hidden-xs">
+                    <div class="search-wrapp">
+                      <form action="">
+                        <div class="search__item">
+                          <input type="seach" class="search__input" placeholder="Поиск"> 
+                          <button type="submit" class="search__submit">
+                            <span class="sprite sprite-magnifier"></span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- <div class="search-drop">
+                      <ul>
+                        <li>
+                          <a href="#">
+                           <span class="name">Удилище</span>
+                            Aqua Aglia AO-19
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                           <span class="name">Удилище</span>
+                            Aqua Aglia AO-19
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                           <span class="name">Удилище</span>
+                            Aqua Aglia AO-19
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="search-drop-bottom">
+                        <a href="#">Все результаты</a>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div class="catalog Etelka-bold mrg-bot" id="catalog-menu">
+                    <div class="catalog__title hidden-xs">Каталог</div>
+                    <ul class="catalog__list">
+                      <li>
+                        <a href="#" class="catalog__link">
+                          <div class="catalog__icon">
+                            <span class="sprite sprite-hook"></span>
+                          </div>
+                          <div class="catalog__name">Рыбалка</div>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="catalog__link">
+                          <div class="catalog__icon">
+                            <span class="sprite sprite-hunting"></span>
+                          </div>
+                          <div class="catalog__name">Охота</div>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="catalog__link">
+                          <div class="catalog__icon">
+                            <span class="sprite sprite-casual-t-shirt-"></span>
+                          </div>
+                          <div class="catalog__name">Одежда и обувь</div>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="catalog__link">
+                          <div class="catalog__icon">
+                            <span class="sprite sprite-boart"></span>
+                          </div>
+                          <div class="catalog__name">Лодки и моторы</div>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="catalog__link">
+                          <div class="catalog__icon">
+                            <span class="sprite sprite-backpack"></span>
+                          </div>
+                          <div class="catalog__name">Туризм и отдых</div>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="catalog__link">
+                          <div class="catalog__icon">
+                            <span class="sprite sprite-radio"></span>
+                          </div>
+                          <div class="catalog__name">Электронные приборы</div>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sidebar__item mrg-bot hidden-xs">
+                    <div class="sidebar__title Etelka-bold clearfix">
+                      <div class="pull-left sidebar__title__text">Статьи</div>
+                      <div class="pull-right sidebar__title__link">
+                        <a href="#" class="middle">Все</a>
+                        <a href="#" class="middle">
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="sidebar__article">
+                      <div class="sidebar__article__img">
+                        <a href="#">
+                          <img src="http://placehold.it/350x150" alt="">
+                        </a>
+                      </div>
+                      <div class="sidebar__article__descr">
+                        <div class="date-block">
+                          12.03.16
+                        </div>
+                        <div class="sidebar__article__text Etelka-bold">
+                          <a href="#">
+                            Каждый четверг скидка 10% на все товары для летней рыбалки
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sidebar__article">
+                      <div class="sidebar__article__img">
+                        <a href="#">
+                          <img src="http://placehold.it/350x150" alt="">
+                        </a>
+                      </div>
+                      <div class="sidebar__article__descr">
+                        <div class="date-block">
+                          12.03.16
+                        </div>
+                        <div class="sidebar__article__text Etelka-bold">
+                          <a href="#">
+                            Каждый четверг скидка 10% на все товары для летней рыбалки
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sidebar__article">
+                      <div class="sidebar__article__img">
+                        <a href="#">
+                          <img src="http://placehold.it/350x150" alt="">
+                        </a>
+                      </div>
+                      <div class="sidebar__article__descr">
+                        <div class="date-block">
+                          12.03.16
+                        </div>
+                        <div class="sidebar__article__text Etelka-bold">
+                          <a href="#">
+                            Каждый четверг скидка 10% на все товары для летней рыбалки
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-8">
+              <div class="row">
+                <div class="center-content">
+                  <div class="breadcrumb mrg-bot">
+                    <ul class="clearfix">
+                      <li>
+                        <a href="#" class="middle">Главная</a>
+                        <i class="fa fa-angle-right middle"></i>
+                      </li>
+                      <li class="active">
+                        <span class="middle">Корзина</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="view-container view-basket">
+                    <h3 class="item-title">Корзина</h3>
+                    <div class="basket">
+                      <table>
+                        <thead>
+                          <tr>
+                            <td>
+                              Товар
+                            </td>
+                            <td>
+                              
+                            </td>
+                            <td>
+                              Цена, руб
+                            </td>
+                            <td>
+                              Кол-во, шт
+                            </td>
+                            <td>
+                              Скидка
+                            </td>
+                            <td>
+                              Сумма, руб
+                            </td>
+                            <td>
+                              
+                            </td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <img src="https://placehold.it/140x100" alt="">
+                            </td>
+                            <td>
+                              <span class="basket__name">Название</span>
+                            </td>
+                            <td>
+                              750
+                            </td>
+                            <td>
+                              <span class="middle count-minus">-</span>
+                              <input type="text" readonly="" value="1 шт." class="count-input middle">
+                              <span class="count-plus middle">+</span>
+                            </td>
+                            <td>
+                              0%
+                            </td>
+                            <td>
+                              750
+                            </td>
+                            <td>
+                              <a href="#">
+                                <img src="img/close-modal.png" alt="">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="https://placehold.it/140x100" alt="">
+                            </td>
+                            <td>
+                              <span class="basket__name">Название</span>
+                            </td>
+                            <td>
+                              750
+                            </td>
+                            <td>
+                              <span class="middle count-minus">-</span>
+                              <input type="text" readonly="" value="1 шт." class="count-input middle">
+                              <span class="count-plus middle">+</span>
+                            </td>
+                            <td>
+                              0%
+                            </td>
+                            <td>
+                              750
+                            </td>
+                            <td>
+                              <a href="#">
+                                <img src="img/close-modal.png" alt="">
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="basket__result clearfix">
+                      <div class="pull-left">
+                        <div class="basket__result__link">
+                          <a href="#" class="green-color">Продолжить покупку</a>
+                        </div>
+                        <div class="basket__result__link">
+                          <a href="#" class="green-color">
+                            Очистить корзину
+                          </a>
+                        </div>
+                      </div>
+                      <div class="pull-right">
+                        <div class="basket__result__text Etelka-bold green-color">
+                          <span>  Итого:  </span>  
+                          <span class="basket__result__price">1500 руб</span>
+                          <a href="#" class="item-link middle text-upparcase">оформить заказ</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket__payment">
+                      <span class="middle basket__payment__text">Мы принимаем к оплате  Visa/MasterCard</span>
+                      <span class="middle">
+                        <img src="img/visa-small.png" alt="">
+                      </span>
+                      <span class="middle">
+                        <img src="img/mastercard-small.png" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  	<div class="subscribe">
+  	  <div class="container">
+  	    <div class="row">
+  	      <div class="subscribe__text pull-left">
+  	        <div class="table-block">
+  	          <div class="block-vertical">
+  	            Подпишитесь 
+  	            на смс-рассылку, 
+  	            чтобы узнать первыми 
+  	            о новинках и акциях
+  	          </div>
+  	        </div>
+  	      </div>
+  	      <div class="subscribe__title hidden-xs Etelka-bold text-upparcase">
+  	        <div class="table-block">
+  	          <div class="block-vertical">
+  	            Будь в курсе
+  	          </div>
+  	        </div>
+  	      </div>
+  	      <div class="subscribe__form pull-right">
+  	        <div class="table-block">
+  	          <div class="block-vertical">
+  	          	<div class="subscribe-mobile-title visible-xs">
+  			      		Будь в Курсе!
+  			      	</div>
+  	            <form action="">
+  	              <div class="input-block">
+  	                <input type="text" class="subscribe__input tel-input phone-input" placeholder="+7 (___) ___-__-__">
+  	              </div>
+  	              <input type="submit" class="submit-input" value="Подписаться">
+  	            </form>
+  	          </div>
+  	        </div>
+  	      </div>
+  	    </div>
+  	  </div>
+  	</div>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-8 col-sm-7">
+  				<div class="row">
+  					<div class="col-sm-4">
+  						<div class="row">
+  							<div class="footer__logo">
+  								<a href="#">
+  									<img src="img/footer-logo2.png" width="174" height="105" alt="">
+  									<div class="footer__logo__text">
+  										мир настоящих мужчин
+  									</div>
+  								</a>
+  							</div>
+  							<div class="footer-mob-info visible-xs pull-right">
+  								<div class="footer-mob-tel">+7 (995) 488- 49-32</div>
+  								<div class="footer-mob-work">
+  									График работы <br>
+  									(с 9.00 – 19.00 <br>
+  									без перерыва и выходных)
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-sm-8 footer-adress-wrapp">
+  						<div class="row">
+  							<div class="footer__title">Адреса магазинов</div>
+  						</div>
+  						<div class="row">
+  							<div class="col-md-6">
+  								<div class="row">
+  									<div class="adress">
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<span class="sprite sprite-small-gps"></span>
+  											</span>
+  											<span class="table-cell">г.Саранск, ул. Б.Хмельницкого, 38</span>
+  										</div>
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<i class="fa fa-phone"></i>
+  											</span>
+  											<span class="table-cell">8 (8342) 47-90-86</span>
+  										</div>
+  									</div>
+  									<div class="adress">
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<span class="sprite sprite-small-gps"></span>
+  											</span>
+  											<span class="table-cell">г.Рузаевка, К.Маркса, 18А</span>
+  										</div>
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<i class="fa fa-phone"></i>
+  											</span>
+  											<span class="table-cell">8 (83451) 6-26-92</span>
+  										</div>
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<span class="sprite sprite-small-post"></span>
+  											</span>
+  											<span class="table-cell">priva-sapsan@rambler.ru</span>
+  										</div>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="col-md-6">
+  								<div class="row">
+  									<div class="adress">
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<span class="sprite sprite-small-gps"></span>
+  											</span>
+  											<span class="table-cell">г.Саранск, ул. Коваленко, 50А</span>
+  										</div>
+  										<div class="adress-item">
+  											<span class="table-cell contact-icon">
+  												<i class="fa fa-phone"></i>
+  											</span>
+  											<span class="table-cell">8 (8342) 72-00-69</span>
+  										</div>
+  										<div class="adress-item hidden-xs">
+  											<span class="table-cell contact-icon">
+  												<span class="sprite sprite-small-clock"></span>
+  											</span>
+  											<span class="table-cell">График работы (с 9.00 – 19.00 без перерыва и выходных)</span>
+  										</div>
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="copyright hidden-xs">
+  						© 2000 – 2016 ООО «Сапсан» <br>
+  						Сеть магазинов для туризма, охоты и рыбалки
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col-md-4 col-sm-5">
+  				<div class="row">
+  					<div class="footer__info">
+  						<div class="footer__tel hidden-xs">+7 (995) 488- 49-32</div>
+  						<div class="footer__mail hidden-xs">
+  							<a href="mailto:e-mail@yandex.ru">e-mail@yandex.ru</a>
+  						</div>
+  						<div class="footer__vk hidden-xs">
+  							<a href="#" class="middle">Мы Вконтакте</a> 
+  							<span class="middle">
+  								<img src="img/vk-icon.png" alt="">
+  							</span>
+  						</div>
+  						<div class="paypal">
+  							Мы принимаем к оплате  Visa/MasterCard
+  						</div>
+  						<div class="paypal__var">
+  							<a href="#" class="middle">
+  								<img src="img/visa.png" alt="">
+  							</a>
+  							<a href="#" class="middle">
+  								<img src="img/mastercard.png" alt="">
+  							</a>
+  							<a href="#" class="middle">
+  								<img src="img/visa.png" alt="">
+  							</a>
+  							<a href="#" class="middle">
+  								<img src="img/mastercard.png" alt="">
+  							</a>
+  						</div>
+  						<div class="footer__vk visible-xs">
+  							<a href="#" class="middle">Присоединяйтесь к нам</a> 
+  							<span class="middle">
+  								<img src="img/vk-icon.png" alt="">
+  							</span>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="copyright visible-xs">
+  				© 2000 – 2016 ООО «Сапсан» <br>
+  				Сеть магазинов для туризма, охоты и рыбалки
+  			</div>
+  			<div class="footer__text">
+  				Данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, Для получения подробной информации о наличии и стоимости указанных товаров и (или) услуг, пожалуйста, обращайтесь к менеджерам отдела клиентского обслуживания.
+  			</div>
+  		</div>
+  	</div>
+  </footer>
+  
+  <div class="up-button"></div>
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="order-modal" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+          <h5 class="text-upparcase green-color">Покупка товара:</h5>
+          <div class="modal-name text-upparcase black Etelka-bold">Удилище спининговое В-1</div>
+        </div>
+        <div class="modal-body">
+          <div class="form-title">Заполните форму</div>
+          <form action="">
+          	<div class="form-group form-group_input">
+              <div class="contact-label">Представьтесь</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group form-group_input">
+              <div class="contact-label">Телефон</div>
+              <input type="text" class="form-control phone-input">
+            </div>
+            <div class="form-group form-group_input">
+              <div class="contact-label">E-mail</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="contact-label">Комментарий</div>
+              <textarea class="form-control" rows="7"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="item-link text-upparcase Etelka-bold" value="Отправить">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="question" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+          <h5 class="text-upparcase green-color">Задать вопрос</h5>
+        </div>
+        <div class="modal-body">
+          <div class="form-title">Чтобы напсиать нам, заполните форму</div>
+          <form action="">
+          	<div class="form-group form-group_input">
+              <div class="contact-label">Представьтесь</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group form-group_input">
+              <div class="contact-label">E-mail</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="contact-label">Комментарий</div>
+              <textarea class="form-control" rows="7"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="item-link text-upparcase Etelka-bold" value="Отправить">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modal-get-call" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+          <h5 class="text-upparcase green-color">Заказать звонок</h5>
+        </div>
+        <div class="modal-body">
+          <div class="form-title">Чтобы заказать звонок, заполните форму</div>
+          <form action="">
+          	<div class="form-group form-group_input">
+              <div class="contact-label">Представьтесь</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group form-group_input">
+              <div class="contact-label">Телефон</div>
+              <input type="text" class="form-control phone-input">
+            </div>
+            <div class="form-group form-group_input">
+              <div class="contact-label">Удобное время звонка</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="submit" class="item-link text-upparcase Etelka-bold" value="Заказать звонок">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal fade" id="thanks" role="dialog">
+    <div class="modal-dialog modal-dialog_thank" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+          <h5 class="text-upparcase green-color">Спасибо за обращение</h5>
+        </div>
+        <div class="modal-body">
+          <div class="modal-text">Наши менеджеры свяжутся с Вами в ближайшее время.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

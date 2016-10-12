@@ -2079,6 +2079,11 @@ img {
   .view-container.no-pad {
     padding: 0;
     padding-bottom: 40px; }
+  .view-container.view-basket {
+    padding: 0; }
+    .view-container.view-basket .item-title {
+      padding: 20px;
+      padding-bottom: 0; }
 
 .item-title {
   text-transform: uppercase;
@@ -3273,3 +3278,60 @@ img[align="left"] {
 .review-text {
   color: #747474;
   line-height: 1.5; }
+
+.basket {
+  text-align: center; }
+  .basket table {
+    width: 100%; }
+    .basket table thead {
+      background: #ebebeb;
+      font-family: "EtelkaTextProBold"; }
+      .basket table thead td {
+        padding: 15px 0;
+        font-size: 12px;
+        color: #757575; }
+        .basket table thead td:first-child {
+          text-transform: uppercase; }
+    .basket table tbody {
+      font-size: 13.5px; }
+      .basket table tbody td {
+        padding: 15px 5px;
+        border-bottom: 2px dashed #ebebeb; }
+    .basket table td {
+      vertical-align: middle; }
+      .basket table td:first-child {
+        width: 17%; }
+      .basket table td:nth-child(2n) {
+        width: 24%; }
+      .basket table td:nth-child(3n) {
+        width: 15%; }
+      .basket table td:nth-child(4n) {
+        width: 15%; }
+      .basket table td:nth-child(5n) {
+        width: 12%; }
+      .basket table td:nth-child(6n) {
+        width: 10%; }
+
+.basket__result {
+  padding: 30px; }
+  .basket__result .item-link {
+    margin-left: 30px;
+    position: relative;
+    top: -4px; }
+  .basket__result__text {
+    font-size: 12px;
+    text-transform: uppercase; }
+  .basket__result__price {
+    font-size: 16px;
+    padding-left: 5px; }
+  .basket__result__link {
+    font-size: 12.5px;
+    margin-bottom: 10px; }
+    .basket__result__link a:hover {
+      text-decoration: underline; }
+
+.basket__payment {
+  padding: 30px;
+  font-size: 12.5px; }
+  .basket__payment__text {
+    margin-right: 20px; }
